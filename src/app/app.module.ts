@@ -25,14 +25,14 @@ import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
         MySkillsComponent,
         ProjectListComponent,
         ProjectPreviewComponent,
-        ContactComponent,
         FooterComponent,
         SocialiconsComponent,
         LegaltextanibntComponent,
         OnScrollArrowComponent,
-        ContactScrollUpComponent,
     ],
     bootstrap: [AppComponent], imports: [BrowserModule,
+        ContactComponent,
+        ContactScrollUpComponent,
         AppRoutingModule,
         FormsModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
