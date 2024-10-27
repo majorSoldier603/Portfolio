@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { animatedVarTextComponent } from "../animatedVarText/animatedVarText.component";
 
 @Component({
   selector: 'app-footer',
@@ -6,8 +7,12 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent implements OnInit {
-    ngOnInit() {
+	constructor(private animatedVarTextComponent: animatedVarTextComponent) { }
+	
+	ngOnInit() {
         this.checkViewportWidth();
+
+		this.animatedVarTextComponent.declareTextVar('Contact me')
     }
 
 	textemail: string = '© Maximilian Stark 2024';

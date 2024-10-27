@@ -11,8 +11,7 @@ import { HttpClient } from '@angular/common/http';
 		templateUrl: './contact.component.html',
 		styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent {
-
+export class ContactComponent {		
 		buttonText: string = 'Send message';
 
 		@HostListener('window:resize', ['$event'])
@@ -21,14 +20,12 @@ export class ContactComponent {
 		}
 	  
 		ngOnInit() {
-		  this.checkWindowWidth();
+		  	this.checkWindowWidth();
 		}
 	  
 		checkWindowWidth() {
 			this.buttonText = window.innerWidth < 900 ? 'Say hello ;)' : 'Send message';
 		}
-
-		constructor() { }
 
 		contactData = {
 			name: '',
