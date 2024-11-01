@@ -12,7 +12,6 @@ import { FormsModule } from '@angular/forms';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { SocialiconsComponent } from './socialicons/socialicons.component';
-import { animatedVarTextComponent } from './animatedVarText/animatedVarText.component';
 import { OnScrollArrowComponent } from './on-scroll-arrow/on-scroll-arrow.component';
 import { ContactScrollUpComponent } from './contact-scroll-up/contact-scroll-up.component';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
@@ -27,10 +26,10 @@ import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
         ProjectPreviewComponent,
         FooterComponent,
         SocialiconsComponent,
-        animatedVarTextComponent,
         OnScrollArrowComponent,
     ],
-    bootstrap: [AppComponent], imports: [BrowserModule,
+    bootstrap: [AppComponent], imports: [
+        BrowserModule,
         ContactComponent,
         ContactScrollUpComponent,
         AppRoutingModule,
