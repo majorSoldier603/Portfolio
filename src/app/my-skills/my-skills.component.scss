@@ -67,9 +67,18 @@
 		img {
 			margin-right: 28.5px;
 
+			@media (max-width:900px) {
+				animation: none;
+				margin-right: 8px;
+			}
+
 			&:hover {
 				animation: icon-animation-circle 280ms;
 				animation-delay: 280ms;
+
+				@media (max-width:900px) {
+					animation: none;
+				}
 			}
 		}
 
@@ -80,6 +89,11 @@
 			font-weight: 400;
 			line-height: 26.4px;
 			text-align: left;
+
+			@media (max-width:900px) {
+				display: flex;
+				flex-direction: column;
+			}
 
 			p {
 				margin: 0px 5px 0px 5px;
