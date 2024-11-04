@@ -12,7 +12,6 @@ import { FormsModule } from '@angular/forms';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { SocialiconsComponent } from './socialicons/socialicons.component';
-import { LegaltextanibntComponent } from './legaltextanibnt/legaltextanibnt.component';
 import { OnScrollArrowComponent } from './on-scroll-arrow/on-scroll-arrow.component';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
@@ -26,10 +25,12 @@ import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
         ProjectPreviewComponent,
         FooterComponent,
         SocialiconsComponent,
-        LegaltextanibntComponent,
         OnScrollArrowComponent,
     ],
-    bootstrap: [AppComponent], imports: [BrowserModule,
+    bootstrap: [AppComponent], imports: [
+        BrowserModule,
+        ContactComponent,
+        ContactScrollUpComponent,
         AppRoutingModule,
         FormsModule, ContactComponent], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
