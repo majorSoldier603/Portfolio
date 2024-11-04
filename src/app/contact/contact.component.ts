@@ -1,12 +1,13 @@
-import { Component, HostListener, OnInit, inject } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { ContactScrollUpComponent } from '../contact-scroll-up/contact-scroll-up.component';
 
 
 @Component({
 		selector: 'app-contact',
 		standalone: true,
-		imports: [FormsModule],
+		imports: [FormsModule, ContactScrollUpComponent],
 		templateUrl: './contact.component.html',
 		styleUrls: ['./contact.component.scss']
 })

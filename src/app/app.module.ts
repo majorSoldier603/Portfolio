@@ -14,7 +14,6 @@ import { FooterComponent } from './footer/footer.component';
 import { SocialiconsComponent } from './socialicons/socialicons.component';
 import { LegaltextanibntComponent } from './legaltextanibnt/legaltextanibnt.component';
 import { OnScrollArrowComponent } from './on-scroll-arrow/on-scroll-arrow.component';
-import { ContactScrollUpComponent } from './contact-scroll-up/contact-scroll-up.component';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 @NgModule({ declarations: [
@@ -25,14 +24,12 @@ import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
         MySkillsComponent,
         ProjectListComponent,
         ProjectPreviewComponent,
-        ContactComponent,
         FooterComponent,
         SocialiconsComponent,
         LegaltextanibntComponent,
         OnScrollArrowComponent,
-        ContactScrollUpComponent,
     ],
     bootstrap: [AppComponent], imports: [BrowserModule,
         AppRoutingModule,
-        FormsModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
+        FormsModule, ContactComponent], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
