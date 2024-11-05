@@ -30,7 +30,6 @@ import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
     bootstrap: [AppComponent], imports: [
         BrowserModule,
         ContactComponent,
-        ContactScrollUpComponent,
         AppRoutingModule,
         FormsModule, ContactComponent], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }

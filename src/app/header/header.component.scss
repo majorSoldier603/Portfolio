@@ -20,9 +20,19 @@ html, body {
 
 header {
 	top: 0;
-	position: fixed;
+    position: fixed;
+    height: inherit;
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+    box-sizing: border-box;
+	z-index: 100;
+}
+
+.headerMainWrap {
+	display: block;
 	width: 100%;
-	height: 13vh;
+	height: 100%;
 }
 
 .top-nav {
@@ -31,9 +41,11 @@ header {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	height: 7.5vh;
+	width: 100%;
+	height: 100%;
 	padding: 1em;
 	position: relative;
+	box-sizing: border-box;
 }
 
 .menu > li {
@@ -76,28 +88,6 @@ header {
 .menu-button::after {
 	content: '';
 	margin-top: 10px;
-}
-
-@media (min-width: 2000px) {
-	.menu-button::before {
-		content: '';
-		margin-top: -20px;
-	}
-	
-	.menu-button::after {
-		content: '';
-		margin-top: 20px;
-	}
-
-	.menu-button,
-	.menu-button::before,
-	.menu-button::after {
-		min-width: 60px;
-	}
-
-	.menu-button-container {
-		width: 60px;
-	}
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::before {
