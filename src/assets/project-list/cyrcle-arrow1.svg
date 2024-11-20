@@ -1,9 +1,5 @@
-<svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Group 8">
-<rect id="Rectangle 9" x="0.0908203" width="75.7016" height="75.7016" rx="35.5" fill="black"/>
-<g id="Group 5">
-<path id="Vector 12" d="M58.4663 17.8574L18.483 58.3738" stroke="#FFFCF3" stroke-width="4"/>
-<path id="Vector 11" d="M37.1419 17.8574L58.4663 17.8574L58.4663 39.1818" stroke="#FFFCF3" stroke-width="4"/>
-</g>
-</g>
+<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="37.5" height="37.5" rx="18.75" fill="black"/>
+<path d="M28.917 8.84668L9.11065 28.9171" stroke="#FFFCF3" stroke-width="3"/>
+<path d="M18.3536 8.84668L28.917 8.84668L28.917 19.4101" stroke="#FFFCF3" stroke-width="3"/>
 </svg>
