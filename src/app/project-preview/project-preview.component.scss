@@ -1,8 +1,14 @@
 .left {
+	width: 100%;
+	max-width: 1920px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	main {
 		display: flex;
 		flex-direction: row;
 		margin-bottom: 10rem;
+		width: 90%;
 
 		@media (max-width: 900px) {
 			flex-direction: column;
@@ -235,10 +241,15 @@
 }
 
 .right {
-	width: min-content;
+	width: 100%;
+	max-width: 1920px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	main {
 		display: flex;
 		flex-direction: row-reverse;
+		width: 90%;
 
 		@media (max-width: 900px) {
 			flex-direction: column;
