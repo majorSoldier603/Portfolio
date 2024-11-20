@@ -18,12 +18,13 @@
 
 	h2 {
 		color: var(--style-2-style-2-blue-blue, #5988FF);
-		text-align: center;
 		font-family: Overpass;
-		font-size: 2.96vw;
-		font-style: normal;
+		font-size: 32px;
 		font-weight: 700;
-		line-height: 120%;
+		line-height: 38.4px;
+		text-align: center;
+		text-underline-position: from-font;
+		text-decoration-skip-ink: none;		
 		/* 38.4px */
 		margin: 0;
 		padding-left: 1.5625rem;
@@ -37,13 +38,14 @@
 
 	h3 {
 		color: var(--cream, #FFFCF3);
-		text-align: center;
 		font-family: Overpass;
-		font-size: 2.12vw;
-		font-style: normal;
+		font-size: 22px;
 		font-weight: 400;
-		line-height: 120%;
-		/* 27.6px */
+		line-height: 26.4px;
+		text-align: center;
+		text-underline-position: from-font;
+		text-decoration-skip-ink: none;
+		
 		margin: 0;
 		padding-left: 1.5625rem;
 		padding-right: 1.5625rem;
@@ -55,24 +57,43 @@
 }
 
 .form-section {
+	width: 100%;
 	form {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
+		width: 33.5%;
 
 		@media (max-width: 900px) {
 			width: 90dvw;
 		}
 
 		input[type=text],[type=email], select, textarea {
+			border: none;
 			width: 100%;
-			padding: 12px;
-			border: 1px solid #ccc;
-			border-radius: 4px;
+			height: 50px;
+			padding: 15px 25px 15px 25px;
 			box-sizing: border-box;
-			margin-top: 6px;
-			margin-bottom: 16px;
 			resize: vertical;
+			background: #000000;
+			border-bottom: 2px solid #FFFCF3,
+		}
+
+		input:focus-visible[type=text],[type=email]:focus-visible, select, textarea:focus-visible {
+			outline: none;
+			border: 2px solid white;
+		}
+
+		textarea {
+			position: relative;
+			min-height: 202px;	
+		}
+
+		textarea::-webkit-resizer {
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+			background-color: #ccc;
 		}
 
 		/* Style the submit button with a specific background color etc */
@@ -81,7 +102,6 @@
 			color: white;
 			padding: 12px 20px;
 			border: none;
-			border-radius: 4px;
 			cursor: pointer;
 		}
 
@@ -94,12 +114,14 @@
 
 .h1consec32 {
 	color: var(--cream, #FFFCF3);
-	text-align: left;
 	font-family: Syne;
-	font-size: 7.22vw;
-	font-style: normal;
+	font-size: 78px;
 	font-weight: 800;
-	line-height: 100%;
+	line-height: 78px;
+	letter-spacing: 0.01em;
+	text-align: center;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;	
 	/* 45px */
 	inline-size: fit-content;
 	letter-spacing: 0.45px;
@@ -141,4 +163,10 @@
 
 .h1consec32:hover {
 	color: #5988FF;
+}
+
+.ng-touched  {
+	&.ng-invalid {
+		//display: none;
+	}
 }

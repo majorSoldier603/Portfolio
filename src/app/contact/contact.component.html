@@ -11,11 +11,15 @@
 			<input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name" required pattern="^[a-zA-Z ]+([a-zA-Z' ]*[a-zA-Z])?$">
 
 			<label for="email">Email</label>
-			<input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+			<input #email [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
 
 			<label for="message">Your Message</label>
-			<textarea [(ngModel)]="contactData.message" id="message" name="message" placeholder="Your message" required></textarea>
-
+			<textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Your message" required></textarea>
+			
+			@if (!message.valid && message.touched) {
+				<span>I've read the privacy policy and agree to the processing of my data as outlined.</span>
+			}
+			
 			<input type="submit" [value]="buttonText" [disabled]="!contactForm.form.valid">
 
 		</form>
