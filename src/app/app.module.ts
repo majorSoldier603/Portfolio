@@ -14,6 +14,8 @@ import { FooterComponent } from './footer/footer.component';
 import { SocialiconsComponent } from './socialicons/socialicons.component';
 import { OnScrollArrowComponent } from './on-scroll-arrow/on-scroll-arrow.component';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { ReferencesComponent } from "./references/references.component";
+import { ReferenceBoxComponent } from './reference-box/reference-box.component';
 
 @NgModule({ declarations: [
         AppComponent,
@@ -26,10 +28,14 @@ import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
         FooterComponent,
         SocialiconsComponent,
         OnScrollArrowComponent,
+        ReferencesComponent,
+        ReferenceBoxComponent
     ],
     bootstrap: [AppComponent], imports: [
-        BrowserModule,
-        ContactComponent,
-        AppRoutingModule,
-        FormsModule, ContactComponent], providers: [provideHttpClient(withInterceptorsFromDi())] })
+    BrowserModule,
+    ContactComponent,
+    AppRoutingModule,
+    FormsModule, 
+    ContactComponent,
+], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }

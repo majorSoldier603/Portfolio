@@ -1,0 +1,46 @@
+div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    img {
+        width: 28.33px;
+        height: 20px;
+    }
+
+    h4 {
+        margin: 0;
+        margin-top: 16px;
+        font-family: "Syne";
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26.4px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    h5 {
+        margin: 0;
+        margin-top: 8px;
+        font-family: "Overpass";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    span {
+        margin: 0;
+        margin-top: 24px;
+        font-family: "Overpass";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+}
