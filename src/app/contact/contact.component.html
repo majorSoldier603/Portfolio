@@ -6,15 +6,23 @@
 	</section>
 	<section class="form-section d-flex justify-content">
 		<form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-
-			<label for="name">First Name</label>
-			<input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name" required pattern="^[a-zA-Z ]+([a-zA-Z' ]*[a-zA-Z])?$">
-
-			<label for="email">Email</label>
-			<input #email [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-
-			<label for="message">Your Message</label>
-			<textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Your message" required></textarea>
+			<div class="InputWraper">
+				<label for="name" style="width: 38%;">First Name</label>
+				<input class="Input" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name" required pattern="^[a-zA-Z ]+([a-zA-Z' ]*[a-zA-Z])?$">
+				<h6 class="FlaseInputError">Your email is required</h6>
+			</div>
+			
+			<div class="InputWraper">
+				<label for="email" style="width: 20%;">Email</label>
+				<input class="Input" #email [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+				<h6 class="FlaseInputError">Your email is required</h6>
+			</div>
+			
+			<div class="InputWraper">
+				<label for="message" style="width: 42%;">Your Message</label>
+				<textarea class="Input" #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Your message" required></textarea>
+				<h6 class="FlaseInputError">Your email is required</h6>
+			</div>
 			
 			@if (!message.valid && message.touched) {
 				<span>I've read the privacy policy and agree to the processing of my data as outlined.</span>

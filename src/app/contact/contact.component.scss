@@ -65,51 +65,150 @@
 		width: 33.5%;
 
 		@media (max-width: 900px) {
-			width: 90dvw;
+			width: 90%;
 		}
 
-		input[type=text],[type=email], select, textarea {
-			border: none;
-			width: 100%;
-			height: 50px;
-			padding: 15px 25px 15px 25px;
-			box-sizing: border-box;
-			resize: vertical;
-			background: #000000;
-			border-bottom: 2px solid #FFFCF3,
-		}
+		div {
+			padding-top: 22px;
+			input[type=text],[type=email], select, textarea {
+				position: relative;
+				border: none;
+				width: 100%;
+				height: 50px;
+				padding: 15px 60px 15px 25px;
+				box-sizing: border-box;
+				resize: vertical;
+				background: #000000;
+				border-bottom: 2px solid #FFFCF3;
+				color: #FFFCF3;
+			
+				&.ng-touched {
+					&.ng-invalid {
+						background-image: url("../../assets/FlaseInputError.svg");
+						background-repeat: no-repeat;
+						background-position: right 20px;
+						background-position: 90% 50%;
+						border: 2px solid #FFFCF3;
+					}
 
-		input:focus-visible[type=text],[type=email]:focus-visible, select, textarea:focus-visible {
-			outline: none;
-			border: 2px solid white;
-		}
+					&.ng-invalid:hover {
+						padding: 15px 40px 15px 25px;
+					}
+				}
 
-		textarea {
-			position: relative;
-			min-height: 202px;	
-		}
+				&.ng-touched {
+					&.ng-valid {
+						background-image: url("../../assets/GoodInput.svg");
+						background-repeat: no-repeat;
+						background-position: right 20px;
+						background-position: 90% 50%;
+						border: 2px solid #FFFCF3;
+					}
 
-		textarea::-webkit-resizer {
-			position: absolute;
-			bottom: 0px;
-			right: 0px;
-			background-color: #ccc;
-		}
+					&.ng-valid:hover {
+						padding: 15px 40px 15px 25px;
+					}
+				}
+			}
 
-		/* Style the submit button with a specific background color etc */
-		input[type=submit] {
-			background-color: #04AA6D;
-			color: white;
-			padding: 12px 20px;
-			border: none;
-			cursor: pointer;
-		}
+			textarea {
+				padding: 15px 40px 15px 25px;
+				&.ng-touched {
+					&.ng-invalid {
+						background-position: 95% 5%;
+					}
 
-		/* When moving the mouse over the submit button, add a darker green color */
-		input[type=submit]:hover {
-			background-color: black;
+					&.ng-valid {
+						background-position: 95% 5%;
+					}
+				}
+			}
+
+			.ng-touched.ng-invalid~.FlaseInputError {
+				display: block !important;
+			}			  				
+			
+
+			input[type=text]:hover,[type=email]:hover, textarea:hover {
+				border: 4px solid #FFFCF3;
+				padding: 11px 56px 11px 21px;
+			}
+
+			textarea:hover {
+				padding: 11px 36px 11px 21px;
+			}
+
+			input:focus-visible[type=text],[type=email]:focus-visible, select, textarea:focus-visible {
+				outline: none;
+				border: 2px solid white;
+				padding: 15px 40px 15px 25px;
+			}
+
+			input::-webkit-input-placeholder, textarea::-webkit-input-placeholder  {
+				-webkit-transition: opacity 0.3s linear; 
+			}
+			  
+			 input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder  {
+				opacity: 0;
+			}
+
+			textarea {
+				min-height: 202px;	
+			}
+
+			textarea::-webkit-resizer {
+				background-image: url("../../assets/resize\ arrow.svg");
+			}
+
+			label {
+				-webkit-transition: opacity 0.3s linear;
+				opacity: 0; 
+				background-color: #000000;
+			}
 		}
 	}
+}
+
+.InputWraper:focus-within {
+	label {
+		opacity: 1 !important;
+	}
+}
+
+.FlaseInputError {
+	display: none;
+	margin: 0;
+	padding-top: 10px;
+	font-family: Overpass;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14.4px;
+	text-align: left;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+	color: #E61C40;
+}
+
+.InputWraper {
+	position: relative;
+	label {
+		font-family: "Overpass";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 19.2px;
+		text-align: left;
+		text-underline-position: from-font;
+		text-decoration-skip-ink: none;
+		position: absolute;
+		top: 14px;
+		left: 19px;
+		color: white;
+		z-index: 3;
+		background-color: #000000;
+		text-align: center;
+	}
+
+
 }
 
 .h1consec32 {
