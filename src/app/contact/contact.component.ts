@@ -30,7 +30,8 @@ export class ContactComponent {
 		contactData = {
 			name: '',
 			email: '',
-			message: ''
+			message: '',
+			privacyPolicy: false
 		}
 
 		mailTest = true;

@@ -7,28 +7,44 @@
 	<section class="form-section d-flex justify-content">
 		<form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 			<div class="InputWraper">
-				<label for="name" style="width: 36px;">First Name</label>
-				<input class="Input" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name" required pattern="^[a-zA-Z ]+([a-zA-Z' ]*[a-zA-Z])?$">
-				<h6 class="FlaseInputError">Your email is required</h6>
+				<label for="name" style="width: fit-content;">Your name</label>
+				<input class="Input" #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name" required pattern="^[a-zA-Z ]+([a-zA-Z' ]*[a-zA-Z])?$">
+				@if (name.pristine && name.invalid && name.touched) {
+					<h6 class="FalseInputError">Your name is required</h6>
+				} @else {
+					<h6 class="FalseInputError">Your name is invalid</h6>
+				}
 			</div>
 			
 			<div class="InputWraper">
-				<label for="email" style="width: 46px;">Email</label>
-				<input class="Input" #email [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-				<h6 class="FlaseInputError">Your email is required</h6>
+				<label for="email" style="width: fit-content">Your email</label>
+				<input class="Input" #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+				@if (email.pristine && email.invalid && email.touched) {
+					<h6 class="FalseInputError">Your email is required</h6>
+				} @else {
+					<h6 class="FalseInputError">Your email is invalid</h6>
+				}			
 			</div>
 			
 			<div class="InputWraper">
-				<label for="message" style="width: 105px;">Your Message</label>
+				<label for="message" style="width: fit-content;">Your message</label>
 				<textarea class="Input" #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Your message" required></textarea>
-				<h6 class="FlaseInputError">Your email is required</h6>
+				@if (message.pristine && message.invalid && message.touched) {
+					<h6 class="FalseInputError">Your message is required</h6>
+				} @else {
+					<h6 class="FalseInputError">Your message is invalid</h6>
+				}
 			</div>
-			
-			@if (!message.valid && message.touched) {
-				<span>I've read the privacy policy and agree to the processing of my data as outlined.</span>
-			}
-			
-			<input type="submit" [value]="buttonText" [disabled]="!contactForm.form.valid">
+			<div class="checkboxWraper">
+				<main style="color: unset;" class="inputHoverBackground">
+					<input type="checkbox" class="inputHoverInput" #privacyPolicy="ngModel" [(ngModel)]="contactData.privacyPolicy" id="privacyPolicy" name="privacyPolicy" required>
+				</main>
+				<label for="privacyPolicy" class="privacyPolicy">I've read the and agree to the <span class="inputHoverSpan">privacy policy</span> processing of my data as outlined.</label>
+				@if (privacyPolicy.invalid && privacyPolicy.touched && privacyPolicy.dirty) {
+					<br><h6 class="FalseInputError">Please accept the privacy policy.</h6>
+				}
+			</div>
+			<input type="submit" class="inputsubmit" [value]="buttonText" [disabled]="contactForm.form.invalid">
 
 		</form>
 		<app-contact-scroll-up></app-contact-scroll-up>

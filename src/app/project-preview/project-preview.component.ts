@@ -32,14 +32,6 @@ export class ProjectPreviewComponent implements OnInit {
 		}
 	}
 
-	hoverout(elementID:number) {
-		this.wichsideishoverd(elementID)
-		let elementRef = document.getElementById(elementID.toString());
-		if (elementRef) {
-			elementRef.className = this.side || '';
-		}
-	}
-
 	wichsideishoverd(elementID:number) {
 		this.side = elementID % 2 === 0 ? 'right' : 'left';
 	}
