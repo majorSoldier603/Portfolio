@@ -2,9 +2,10 @@ div {
     display: flex;
     align-items: center;
     flex-direction: column;
-    img {
+    svg {
         width: 28.33px;
         height: 20px;
+        fill: black;
     }
 
     h4 {
