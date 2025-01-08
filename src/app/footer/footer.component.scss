@@ -9,6 +9,9 @@
     background-color: black;
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: 900px) {
+        justify-content: center;
+    }
     justify-content: space-between;
 
     div {
@@ -69,7 +72,13 @@
     }
 
     section {
-        width: 30%;
+        @media (max-width: 900px) {
+            width: fit-content;
+        }
+
+        @media (min-width: 900px) {
+            width: 30%;
+        }
 
         app-socialicons {
             @media (max-width: 900px) {
@@ -79,6 +88,7 @@
 
         app-legaltextanibnt {
             @media (max-width: 900px) {
+
                 display: none;
             }
         }

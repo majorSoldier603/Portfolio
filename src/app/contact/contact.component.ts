@@ -30,15 +30,16 @@ export class ContactComponent {
 		contactData = {
 			name: '',
 			email: '',
-			message: ''
+			message: '',
+			privacyPolicy: false
 		}
 
-		mailTest = true;
+		mailTest = false;
 
 		http = inject(HttpClient);
 
 		post = {
-			endPoint: 'https://maximilian-stark.dev/sendMail.php',
+			endPoint: 'https://maximilianstark.dev/sendMail.php',
 			body: (payload: any) => JSON.stringify(payload),
 			options: {
 				headers: {
