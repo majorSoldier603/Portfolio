@@ -310,6 +310,8 @@
 	text-underline-position: from-font;
 	text-decoration-skip-ink: none;
 	transition: all 300ms ease-in-out;
+
+	cursor: pointer;
 }
 
 .inputsubmit:disabled  {
@@ -361,11 +363,8 @@
 	z-index: 0;
 	border:solid 0px;
 	border-radius: 100%;
-	width: 23px;
-	height: 23px;
-	@media (min-width: 900px) {
-		width: 42px;
-	}
+	height: 24px;
+	width: 24px;
 }
 
 .inputHoverBackground:hover {
