@@ -3,6 +3,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin: 0;
+    
     h1 {
         margin: 0;
         margin-bottom: 51px;
@@ -27,7 +28,7 @@ main {
         }  
         transition: all 0.3s;
         &:hover {
-            color: #5988FF; 
+            color: #5988FF;
         }
     }
 
@@ -64,14 +65,7 @@ main {
         app-reference-box {
             width: 100%;
             height: 450px;
-            padding: 24px 16px 24px 16px;
-            border: 4px solid black;
-            box-sizing: border-box;
-            transition: all 0.3s;
-         
-            &:hover {
-                border-color: #5988FF; 
-            }
+            box-sizing: border-box;    
         }
 
         @media (max-width: 900px) {
