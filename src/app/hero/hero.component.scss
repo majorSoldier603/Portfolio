@@ -5,23 +5,25 @@ body {
 }
 
 .one {
+	width: 100%;
 	h1 {
 		color: #000;
 		text-align: center;
 		font-family: Syne;
-		font-size: 9vw;
+		font-size: 128px;
 		font-style: normal;
 		font-weight: 800;
 		line-height: 100%; /* 128px */
 		letter-spacing: -3.2px;
 		margin: 0;
+		width: 100%;
 	}
 
 	p {
 		color: var(--style-2-style-2-blue-blue, #5988FF);
 		text-align: end;
 		font-family: Overpass;
-		font-size: 5vw;
+		font-size: 48px;
 		font-style: normal;
 		font-weight: 700;
 		line-height: 100%; /* 48px */
@@ -33,12 +35,12 @@ body {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding-top: 5vh;
+		padding-top: 1%;
 	}
 	
 	hr {
 		border-top: 4px solid black;
-		width: 30vw;
+		width: 50%;
 		margin: 0;
 		padding: 0;
 	}
@@ -66,7 +68,6 @@ body {
 		letter-spacing: -0.575px;
 		margin: 0;
 		text-align: center;
-		overflow: hidden;
 		height: 30px;
 		line-height: 100%; /* 23px */
 		width: 400px;
@@ -96,6 +97,7 @@ body {
 		div {
 			margin-top: 30%;
 			height: 70%;
+			overflow-y: clip;
 		}
 	}
 }
