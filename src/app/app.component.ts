@@ -1,5 +1,6 @@
 import { Component, AfterViewInit, ViewChildren, QueryList, ElementRef, HostListener } from '@angular/core';
 import { OnScrollArrowComponent } from './on-scroll-arrow/on-scroll-arrow.component';
+import { VariableBinding } from '@angular/compiler';
 
 @Component({
 	selector: 'app-root',
@@ -23,6 +24,7 @@ export class AppComponent implements AfterViewInit {
 	ngAfterViewInit() {
 		this.scrollArrows.forEach((scrollArrow, index) => {
 			scrollArrow.nativeElement.children[0].id = 'arrow' + index;
+			console.log(scrollArrow.nativeElement.children)
 		});
 	}
 

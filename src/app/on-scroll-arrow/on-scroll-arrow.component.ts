@@ -19,4 +19,9 @@ export class OnScrollArrowComponent {
 	toggleHover(value: boolean): void {
 	  	this.isHovered = value;
 	}
+
+	scrollto() {
+		console.log()
+
+	}
 }

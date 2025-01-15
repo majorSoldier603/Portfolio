@@ -94,7 +94,10 @@
 			text-align: left;
 			font-variant-numeric: lining-nums proportional-nums;
 			font-family: Syne;
-			font-size: 2.6%;
+			font-size: 3rem;
+			@media (max-width:900px) {
+				font-size: 1.4375rem;
+			}
 			font-style: normal;
 			font-weight: 700;
 			line-height: 120%;
@@ -109,7 +112,10 @@
 			text-align: left;
 			font-variant-numeric: lining-nums proportional-nums;
 			font-family: Syne;
-			font-size: 3.6%;
+			font-size: 3rem;
+			@media (max-width:900px) {
+				font-size: 1.4375rem;
+			}
 			font-style: normal;
 			font-weight: 700;
 			line-height: 120%;
@@ -374,7 +380,10 @@
 			text-align: left;
 			font-variant-numeric: lining-nums proportional-nums;
 			font-family: Syne;
-			font-size: 2.6%;
+			font-size: 3rem;
+			@media (max-width:900px) {
+				font-size: 1.4375rem;
+			}
 			font-style: normal;
 			font-weight: 700;
 			line-height: 120%;
@@ -390,7 +399,10 @@
 			text-align: right;
 			font-variant-numeric: lining-nums proportional-nums;
 			font-family: Syne;
-			font-size: 3.6%;
+			font-size: 3rem;
+			@media (max-width:900px) {
+				font-size: 1.4375rem;
+			}
 			font-style: normal;
 			font-weight: 700;
 			line-height: 120%;
@@ -535,7 +547,7 @@
 			}
 		}
 		span {
-			transform: translate(-2%, 8%);
+			transform: translate(-8rem, 2rem);
 			@media (max-width:900px) {
 				transform: translateX(4%);
 				padding: 10px;
