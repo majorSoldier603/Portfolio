@@ -24,7 +24,6 @@ export class AboutMeComponent implements OnInit {
 	textColor: string = 'black';
 
 	changeBntColor(isBlack:boolean) {
-		console.log(isBlack, this.textColor)
 		if (isBlack) {
 			this.bgColor = 'black';
 			this.textColor = 'white';
@@ -38,7 +37,6 @@ export class AboutMeComponent implements OnInit {
 	scrollToContact() {
 		const element = document.getElementById("app-contact");
 		if (element) {
-			console.log('element: ', element);
 			element.scrollIntoView({
 				behavior: "smooth",
 				block: "start",
