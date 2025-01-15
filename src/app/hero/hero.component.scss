@@ -11,6 +11,9 @@ body {
 		text-align: center;
 		font-family: Syne;
 		font-size: 128px;
+		@media (max-width: 1064px) {
+			font-size: 40px;
+		}
 		font-style: normal;
 		font-weight: 800;
 		line-height: 100%; /* 128px */
@@ -24,11 +27,14 @@ body {
 		text-align: end;
 		font-family: Overpass;
 		font-size: 48px;
+		@media (max-width: 900px) {
+			font-size: 23px;
+		}
 		font-style: normal;
 		font-weight: 700;
 		line-height: 100%; /* 48px */
 		letter-spacing: -1.2px;
-		padding-left: 1vw;
+		padding-left: 1%;
 	}
 	
 	div {
@@ -41,6 +47,9 @@ body {
 	hr {
 		border-top: 4px solid black;
 		width: 50%;
+		@media (max-width: 900px) {
+			width: 40%;
+		}
 		margin: 0;
 		padding: 0;
 	}
@@ -52,7 +61,7 @@ body {
 	align-content: center;
 	justify-content: space-between;
 	align-items: center;
-	width: 92vw;
+	width: 92%;
 
 	position: relative;
 	border: 0px solid red;
@@ -130,9 +139,9 @@ body {
 }
 .arrow-down::before {
 	width: 4px;
-	height: 8vh;
+	height: 50%;
 	@media (max-width: 900px) {
-		height: 16vh;
+		height: 50%;
 	}
 	left: 22px;
 	background: currentColor;

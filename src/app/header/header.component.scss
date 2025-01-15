@@ -19,8 +19,6 @@ html, body {
 }
 
 header {
-	top: 0;
-	position: fixed;
 	width: 100%;
 	height: 92px;
 	max-width: 1920px;
@@ -100,9 +98,9 @@ header {
 }
 
 .menu {
-	position: sticky;
-	bottom: -92.5vh;
-	height: 92.5vh;
+	position: fixed;
+	top: 100%;
+	height: 100%;
 	left: 0;
 	flex-direction: column;
 	width: 100%;
@@ -113,17 +111,19 @@ header {
 }
 
 #menu-toggle ~ .menu {
-	bottom: -1000%;
+	bottom: 92px;
+	display: none;
 	transition: height 125ms cubic-bezier(0.23, 1, 0.32, 1);
-	transition: bottom 125ms cubic-bezier(0.23, 1, 0.32, 1);
+	transition: top 125ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 #menu-toggle:checked ~ .menu {
-	height: 95vh;
-	width: 100vw;
-	bottom: -95vh;
+    height: calc(100% - 92px);
+	width: 100%;
+	display: unset;
+	top	: 92px;
 	transition: height 125ms cubic-bezier(0.23, 1, 0.32, 1);
-	transition: bottom 125ms cubic-bezier(0.23, 1, 0.32, 1);
+	transition: top 125ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .menu {
@@ -269,22 +269,22 @@ header {
 
 .shortcuts-item {
 	color: #000000;
-	font-size: 10vh;
+	font-size: 70px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: 100%;
 	letter-spacing: -2.4px;
 
 	@media (max-width: 1200px) {
-		font-size: 6vh;
+		font-size: 45px;
 	}
 
 	@media (max-width: 650px) {
-		font-size: 4vh;
+		font-size: 45px;
 	}
 
 	@media (max-width: 450px) {
-		font-size: 3vh;
+		font-size: 45px;
 	}
 }
 
@@ -302,8 +302,7 @@ header {
 
 .hello-box {
 	clip-path: polygon(0 0%, 100% 50%, 100% 100%, 48% 100%, 0 100%);
-	height: 25vh;
-	width: 100vw;
+	height: 35%;
 	background-color: black;
 	position: absolute;
 	bottom: 0;
@@ -316,7 +315,7 @@ header {
 	align-items: flex-end;
 	@media (max-width: 900px) {
 		flex-direction: column;
-		height: 35vh;
+		height: 40%;
 		clip-path: polygon(0 0%, 100% 20%, 100% 100%, 48% 100%, 0 100%);
 		display: flex; 
 		justify-content: space-evenly;
@@ -360,14 +359,14 @@ header {
 			padding-right: 0 !important;
 			padding-right: 1.5625rem !important;
 			align-self: flex-end;
-        	width: 60vw;
+        	width: 60%;
 		}
 	}
 
 	h3 {
 		color: var(--cream, #FFFCF3);
 		font-family: Syne;
-		font-size: 6vw;
+		font-size: 78px;
 		font-style: normal;
 		font-weight: 800;
 		line-height: 100%; /* 78px */
@@ -375,14 +374,8 @@ header {
 		margin: 0;
 		display: contents;
 
-
-		@media (max-height: 500px) {
-			font-size: 10vw;
-		}
-
 		@media (max-width: 900px) {
-
-			font-size: 12vw;
+			font-size: 3rem;
 			animation-name: color-header;
 			animation-duration: 3s;
 			animation-iteration-count: infinite;
@@ -413,10 +406,6 @@ header {
 		letter-spacing: -0.575px;
 		line-height: normal;
 		margin: 0;
-
-		@media (max-width: 900px) {
-			font-size: 1vh;
-		}
 	}
 	a:link {
 		text-decoration: none;
@@ -438,18 +427,3 @@ header {
 		}
 	}
 }
-
-.hello-box {
-	div:last-child {
-		height: 40px;
-		align-items: center;
-		gap: 5vw;
-		flex-shrink: 0;
-		padding-right: 100px;
-
-		@media (max-width: 900px) {
-			padding-bottom: 0px;
-		}
-	}
-}
-

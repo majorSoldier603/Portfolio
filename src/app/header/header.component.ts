@@ -9,7 +9,6 @@ export class HeaderComponent {
 	isChecked:boolean = false
 
 	onCheckboxChange() {
-		console.log(this.isChecked)
 		if (this.isChecked) {
 			document.getElementById('mainbody')?.classList.add('stop-scrolling');
 		} else if (!this.isChecked) {

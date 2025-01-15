@@ -2,8 +2,6 @@
 	display: flex;
 	padding: 7rem 0 0 0;
 	position: absolute;
-	left: 20vh;
-	top: -16vw;
 
 	@keyframes down-right-animation-moba-xss {
 		0% {
@@ -177,46 +175,47 @@
 
 
 #arrow0 {
-	left: -53vw;
-	top: -64vw;
+    left: -32rem;
+    top: -42rem;
 
 	@media (max-width: 800px) {
-		left: -30vw;
-		top: -68vw;
+		left: -10rem;
+        top: -26rem;
 	}
 
 	@media (max-width: 450px) {
-		left: -42vw;
-		top: -77vw;
+		left: -12rem;
+        top: -21rem;
 	}
 }
 
 #arrow1 {
-	left: 10vw;
-    top: -8vw;
+    left: 13rem;
+    top: -16rem;
 
 	@media (max-width: 800px) {
-		left: 44vw;
-		top: -33vw;
+        left: 10rem;
+        top: -7rem;
+
 	}
 
 	@media (max-width: 450px) {
-		left: 5vw;
-		top: -48vw;
+        left: 6rem;
+        top: -8rem;
 	}
 }
 
 #arrow2 {
-	left: -60vw;
-	top: -80vw;
+    left: -28rem;
+    top: -42rem;
 
 	@media (max-width: 800px) {
-		left: -30vw;
-		top: -68vw;
+		left: -11rem;
+        top: -31rem;
 	}
 
 	@media (max-width: 450px) {
-		left: -38vw;
-		top: -80vw;
+        left: -10rem;
+        top: -24rem;
 	}
 }
