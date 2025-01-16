@@ -19,6 +19,6 @@ export class FooterComponent implements OnInit {
 	}
   
 	checkViewportWidth() {
-	  this.textemail = window.innerWidth < 900 ? 'me@maximilian-stark.dev' : '© Maximilian Stark 2024';
+	  this.textemail = window.innerWidth < 900 ? 'me@maximilianstark.dev' : '© Maximilian Stark 2024';
 	}
 }

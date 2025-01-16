@@ -9,6 +9,13 @@ app-hero {
     height: 100%;
 } 
 
+app-my-skills {
+    display: flex; 
+    justify-content: center;  
+    width: calc(100% - 200px);
+    margin: 0 100px 0 100px;
+}
+
 app-on-scroll-arrow {
     display: flex;
     position: relative;

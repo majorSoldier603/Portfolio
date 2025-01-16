@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollService } from "../scroll.service";
 
 @Component({
 	selector: 'app-hero',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./hero.component.scss']
 })
 export class HeroComponent implements OnInit {
+	constructor(private scrollService: ScrollService) {}
+
 	ngOnInit(): void {
 		this.fadeInOut(true)
 	}
@@ -35,15 +38,7 @@ export class HeroComponent implements OnInit {
 		}
 	}
 
-	scrollToContact() {
-		const element = document.getElementById("myForm");
-		if (element) {
-			console.log('element: ', element);
-			element.scrollIntoView({
-				behavior: "smooth",
-				block: "start",
-				inline: "nearest"
-			});
-		}
+	scrollTo(elementId: string, offset: number) {
+		this.scrollService.scrollToElement(elementId, offset);
 	}
 }

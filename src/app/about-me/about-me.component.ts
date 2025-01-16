@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollService } from "../scroll.service";
 
 @Component({
 	selector: 'app-about-me',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent implements OnInit {
+	constructor(private scrollService: ScrollService) {}
+	
 	ngOnInit(): void {
 		this.fadeInOut(true)
 	}
@@ -34,14 +37,7 @@ export class AboutMeComponent implements OnInit {
 		}
 	}
 
-	scrollToContact() {
-		const element = document.getElementById("app-contact");
-		if (element) {
-			element.scrollIntoView({
-				behavior: "smooth",
-				block: "start",
-				inline: "nearest"
-			});
-		}
+	scrollTo(elementId: string, offset: number) {
+	  this.scrollService.scrollToElement(elementId, offset);
 	}
 }

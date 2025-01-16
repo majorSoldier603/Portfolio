@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ScrollService } from "../scroll.service";
 
 @Component({
   selector: 'app-on-scroll-arrow',
@@ -10,7 +11,7 @@ export class OnScrollArrowComponent {
 	componentId: any;
 	itemId: any;
 
-	constructor() { }
+	constructor(private scrollService: ScrollService) {}
 	
 	@Input() arrowId = 3;
 
@@ -20,8 +21,20 @@ export class OnScrollArrowComponent {
 	  	this.isHovered = value;
 	}
 
-	scrollto() {
-		console.log()
+	scrollTo(event: MouseEvent, offset: number) {
+		let elementId = (event.target as HTMLElement).id;
 
+		if (elementId == "arrow0") {
+			elementId = 'app-my-skills'
+		} 
+		if (elementId == "arrow1") {
+			elementId = 'app-project-list'
+		} 
+		if (elementId == "arrow2") {
+			elementId = 'app-contact'
+			offset = 20
+		}
+
+		this.scrollService.scrollToElement(elementId, offset);
 	}
 }

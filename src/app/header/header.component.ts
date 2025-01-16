@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { ScrollService } from "../scroll.service";
 @Component({
 	selector: 'app-header',
 	templateUrl: './header.component.html',
@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
 	isChecked:boolean = false
 
+	constructor(private scrollService: ScrollService) {}
+	
 	onCheckboxChange() {
 		if (this.isChecked) {
 			document.getElementById('mainbody')?.classList.add('stop-scrolling');
@@ -18,19 +20,10 @@ export class HeaderComponent {
 		}
 	}
 
-	scrollToAboutMe(elementID: string) {
+	scrollTo(elementId: string, offset: number) {
 		this.isChecked = false
 		document.getElementById('mainbody')?.classList.remove('stop-scrolling');
-
-		console.log(document.getElementById("menu-toggle"));
-		const element = document.getElementById(elementID);
-		if (element) {
-			console.log('element: ', element);
-			element.scrollIntoView({
-				behavior: "smooth",
-				block: "start",
-				inline: "nearest"
-			});
-		}
+		
+		this.scrollService.scrollToElement(elementId, offset);
 	}
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScrollService } from "../scroll.service";
 
 @Component({
 	selector: 'app-my-skills',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class MySkillsComponent {
 	arrowAnimation: boolean = false;
+
+	constructor(private scrollService: ScrollService) {}
+
+	scrollTo(elementId: string, offset: number) {
+	  this.scrollService.scrollToElement(elementId, offset);
+	}
 }

@@ -24,7 +24,6 @@ export class AppComponent implements AfterViewInit {
 	ngAfterViewInit() {
 		this.scrollArrows.forEach((scrollArrow, index) => {
 			scrollArrow.nativeElement.children[0].id = 'arrow' + index;
-			console.log(scrollArrow.nativeElement.children)
 		});
 	}
 
@@ -36,6 +35,6 @@ export class AppComponent implements AfterViewInit {
 
 	checkViewportWidth() {
 		this.buttonText = window.innerWidth < 900 ? 'Say hello ;)' : 'Send message';
-		this.textemail = window.innerWidth < 900 ? 'me@maximilian-stark.dev' : '© Maximilian Stark 2024';
+		this.textemail = window.innerWidth < 900 ? 'me@maximilianstark.dev' : '© Maximilian Stark 2024';
 	}
 }
