@@ -1,14 +1,12 @@
 .left {
+	padding: 0 100px 0 100px;
 	width: 100%;
-	max-width: 1920px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	box-sizing: border-box;
 	main {
 		display: flex;
 		flex-direction: row;
 		margin-bottom: 5rem;
-		width: 90%;
+		width: 100%;
 
 		@media (max-width: 900px) {
 			flex-direction: column;
@@ -44,13 +42,14 @@
 
 				img {
 					display: flex;
+					object-fit: cover;
 					width: 100%;
 					height: 100%;
 					align-items: flex-start;
 					gap: 10px;
 					flex-shrink: 0;
 					filter: grayscale(100%);
-					transition: filter 0.3s ease-out;
+					transition: filter 125ms ease-out;
 
 					@media (max-width: 900px) {
 						width: 100%;
@@ -71,7 +70,7 @@
 					}
 					height: 94%;
 					border: 5px solid transparent;
-					transition:	border 0.3s ease-out;
+					transition:	border 125ms ease-out;
 	
 					img {
 						width: 12%;
@@ -83,7 +82,7 @@
 						opacity: 0;
 						scale: 1;
 						transform: rotate(-0turn);
-						transition: all 0.3s ease-out;
+						transition: all 125ms ease-out;
 					}
 				}
 			}
@@ -131,7 +130,7 @@
 				max-width: 90%;
 			}
 			opacity: 0;
-			transition: all 0.3s ease-out;
+			transition: all 125ms ease-out;
 
 			display: flex;
 			flex-direction: column;	
@@ -188,6 +187,7 @@
 		div {
 			display: flex;
 			width: 50%;
+			flex-direction: row;
 			
 			@media (max-width: 900px) {
 				width: 100%;
@@ -195,7 +195,7 @@
 			a {
 				
 				display: flex;
-				transition: all 0.3s;
+				transition: all 125ms;
 				padding: 1.5rem 10rem;
 				width: 0;
 				justify-content: center;
@@ -230,14 +230,14 @@
 			div {
 				img {
 					filter: grayscale(0%);
-					transition: all 0.3s ease-out;
+					transition: all 125ms ease-out;
 				}
 				div {
 					@media (max-width: 900px) {
 						border: 4px solid black;
 					}
 					border: 5px solid black;
-					transition: all 0.3s ease-out;
+					transition: all 125ms ease-out;
 					
 					img {
 						transform: rotate(-0.375turn);
@@ -250,7 +250,7 @@
 						width: 35px;
 						height: 35px;
 						border: 0;
-						transition: all 0.3s ease-out;	
+						transition: all 125ms ease-out;	
 					}
 				}
 			}
@@ -262,7 +262,7 @@
 				padding: 10px;
 			}
 			opacity: 1;
-			transition: transform 0.3s ease-out;
+			transition: transform 125ms ease-out;
 			/*
 			h1 {
 			}
@@ -289,10 +289,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 0 100px 0 100px;
+    box-sizing: border-box;
 	main {
 		display: flex;
 		flex-direction: row-reverse;
-		width: 90%;
+		width: 100%;
 
 		@media (max-width: 900px) {
 			flex-direction: column;
@@ -328,12 +330,13 @@
 
 				img {
 					display: flex;
+					object-fit: cover;
 					width: 100%;
 					height: 100%;
 					align-items: flex-start;
 					gap: 10px;
 					flex-shrink: 0;
-					transition: grayscale 0.3s ease;
+					transition: grayscale 125ms ease;
 					filter: grayscale(100%);
 
 					@media (max-width: 900px) {
@@ -369,7 +372,7 @@
 						opacity: 0;
 						scale: 1;
 						transform: rotate(-0turn);
-						transition: all 0.3s ease-out;
+						transition: all 125ms ease-out;
 					}
 				}
 			}
@@ -421,7 +424,7 @@
 			}
 			text-align: left;
 			opacity: 0;
-			transition: all 0.3s ease-out;
+			transition: all 125ms ease-out;
 
 			display: flex;
 			flex-direction: column;
@@ -482,15 +485,14 @@
 		}
 
 		div {
-			display: flex;
-			width: 50%;
+			flex-direction: row-reverse;
 			@media (max-width:900px) {
 				padding: 3px;
 				width: 100%;
 				justify-content: flex-end;
 			}
 			a {
-				transition: all 0.3s !important;
+				transition: all 125ms !important;
 				display: flex;
 				padding: 1.5rem 10rem;
 				justify-content: center;
@@ -523,14 +525,14 @@
 			div {
 				img {
 					filter: grayscale(0%);
-					transition: all 0.3s ease-out;
+					transition: all 125ms ease-out;
 				}
 				div {
 					@media (max-width: 900px) {
 						border: 4px solid black;
 					}
 					border: 5px solid black;
-					transition: all 0.3s ease-out;
+					transition: all 125ms ease-out;
 					
 					img {
 						transform: rotate(-0.375turn);
@@ -539,7 +541,7 @@
 						@media (max-width: 900px) {
 							scale: 1.3;
 						}
-						transition: all 0.3s ease-out;
+						transition: all 125ms ease-out;
 						width: 35px;
 						height: 35px;
 					}
@@ -547,13 +549,13 @@
 			}
 		}
 		span {
-			transform: translate(-8rem, 2rem);
+			transform: translate(-8rem, 1rem);
 			@media (max-width:900px) {
 				transform: translateX(4%);
 				padding: 10px;
 			}
 			opacity: 1;
-			transition: transform 0.3s ease-out;	
+			transition: transform 125ms ease-out;	
 			/*
 			h1 {
 			}
@@ -575,6 +577,9 @@
 }
 
 .owhmax900 {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 50%;
 	@media (max-width: 450px) {
 		overflow-x: hidden;	
 	}

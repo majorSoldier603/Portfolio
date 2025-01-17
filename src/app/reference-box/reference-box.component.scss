@@ -4,7 +4,7 @@ main {
 	padding: 24px 16px 24px 16px;
 	border: 4px solid black;
 	box-sizing: border-box;
-	transition: all 0.3s;
+	transition: all 125ms;
             
 	&:hover {
 		border-color: #5988FF; 
@@ -19,7 +19,7 @@ main {
 		align-items: center;
 
 		svg {
-			transition: all 0.3s;
+			transition: all 125ms;
 			width: 28.33px;
 			height: 20px;
 			fill: black;

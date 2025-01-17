@@ -27,7 +27,6 @@ export class HeroComponent implements OnInit {
 	textColor: string = 'black';
 
 	changeBntColor(isBlack:boolean) {
-		console.log(isBlack, this.textColor)
 		if (isBlack) {
 			this.bgColor = 'black';
 			this.textColor = 'white';

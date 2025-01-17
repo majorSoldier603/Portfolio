@@ -71,7 +71,7 @@ body {
 	height: 400px;
 	min-width: 30px;
 
-	span {
+	a {
 		color: var(--black, #000);
 		font-family: Overpass;
 		font-size: 23px;
@@ -87,6 +87,8 @@ body {
 		bottom: -32px;
 		transform: rotate(-90deg);
 		transform-origin: top left;
+		text-decoration: none;
+		cursor: pointer;
 	}
 
 	h2 {

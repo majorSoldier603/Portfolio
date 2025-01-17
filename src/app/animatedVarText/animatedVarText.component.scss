@@ -7,13 +7,13 @@
     font-weight: 400;
     line-height: 120%; /* 19.2px */
     position: relative;
-    transition: all 0.3s;
+    transition: all 125ms;
     width: fit-content;
     padding-right: 10px;
     float: right;
 
     &::after {
-        transition: all 0.3s;
+        transition: all 125ms;
 
         content: '';
         opacity: 0;
@@ -28,11 +28,11 @@
 
     &:hover {
         font-weight: 900;
-        transition: all 0.3s;
+        transition: all 125ms;
         padding-right: 0px;
 
         &::after {
-            transition: all 0.3s;
+            transition: all 125ms;
 
             content: '';
             opacity: 1;

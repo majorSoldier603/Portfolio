@@ -4,7 +4,7 @@
 	}
 
 	cursor: pointer;
-	transition: all 0.3s;
+	transition: all 125ms;
 	position: absolute !important;
 	bottom: -2rem;
 	right: 6.25rem;
@@ -26,7 +26,7 @@
 	}
 
 	section {
-		transition: all 310ms;
+		transition: all 125ms;
 		content: "";
 		display: block;
 		width: 0.3rem;
