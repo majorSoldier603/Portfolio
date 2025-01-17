@@ -1,0 +1,407 @@
+.none {
+	border: none !important;
+	padding: 0 !important;
+	color: white !important;
+	margin: 0;
+	outline: none;
+}
+
+.contact-main {
+	padding-bottom: 15%;
+	clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+
+	@media (max-width: 900px) {
+		clip-path: polygon(0% 0%, 100% 6%, 100% 100%, 0% 100%);
+	}
+
+	background-color: #000000;
+
+	h2 {
+		color: var(--style-2-style-2-blue-blue, #5988FF);
+		font-family: Overpass;
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 38.4px;
+		text-align: center;
+		text-underline-position: from-font;
+		text-decoration-skip-ink: none;		
+		/* 38.4px */
+		margin: 0;
+		padding-left: 1.5625rem;
+		padding-right: 1.5625rem;
+		padding-bottom: 1.1875rem;
+
+		@media (max-width: 900px) {
+			font-size: 2rem;
+		}
+	}
+
+	h3 {
+		color: var(--cream, #FFFCF3);
+		font-family: Overpass;
+		font-size: 22px;
+		font-weight: 400;
+		line-height: 26.4px;
+		text-align: center;
+		text-underline-position: from-font;
+		text-decoration-skip-ink: none;
+		
+		margin: 0;
+		padding-left: 1.5625rem;
+		padding-right: 1.5625rem;
+
+		@media (max-width: 900px) {
+			font-size: 2rem;
+		}
+	}
+}
+
+.form-section {
+	width: 100%;
+	form {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		width: 33.5%;
+
+		@media (max-width: 900px) {
+			width: 90%;
+		}
+
+		.InputWraper {
+			padding-top: 22px;
+			input[type=text],[type=email], select, textarea {
+				position: relative;
+				border: none;
+				width: 100%;
+				height: 50px;
+				padding: 15px 60px 15px 25px;
+				box-sizing: border-box;
+				resize: vertical;
+				background: #000000;
+				border-bottom: 2px solid #FFFCF3;
+				color: #FFFCF3;
+			
+				&.ng-touched {
+					&.ng-invalid {
+						background-image: url("../../../../assets/FalseInputError.svg");
+						background-repeat: no-repeat;
+						background-position: right 20px;
+						background-position: 96% 50%;
+						border: 2px solid #FFFCF3;
+					}
+
+					&.ng-invalid:hover {
+						padding: 15px 40px 15px 25px;
+					}
+				}
+
+				&.ng-touched {
+					&.ng-valid {
+						background-image: url("../../../../assets/GoodInput.svg");
+						background-repeat: no-repeat;
+						background-position: right 20px;
+						background-position: 96% 50%;
+						border: 2px solid #FFFCF3;
+					}
+
+					&.ng-valid:hover {
+						padding: 15px 40px 15px 25px;
+					}
+				}
+			}
+
+			textarea {
+				padding: 15px 40px 15px 25px;
+				&.ng-touched {
+					&.ng-invalid {
+						background-position: 95% 5%;
+					}
+
+					&.ng-valid {
+						background-position: 95% 5%;
+					}
+				}
+			}
+
+			.ng-touched.ng-invalid~.FalseInputError {
+				display: block !important;
+			}			  				
+			
+
+			input[type=text]:hover,[type=email]:hover, textarea:hover {
+				border: 4px solid #FFFCF3;
+				padding: 11px 56px 11px 21px;
+				cursor: pointer;
+			}
+
+			textarea:hover {
+				padding: 11px 36px 11px 21px;
+			}
+
+			input:focus-visible[type=text],[type=email]:focus-visible, select, textarea:focus-visible {
+				outline: none;
+				border: 2px solid white;
+				padding: 15px 40px 15px 25px;
+			}
+
+			input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, textarea::placeholder  {
+				-webkit-transition: opacity 125ms linear; 
+				font-family: 'Overpass';
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 19.2px;
+				text-align: left;
+				text-underline-position: from-font;
+				text-decoration-skip-ink: none;
+				color: #FFFCF3;
+				
+			}
+			  
+			input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder  {
+				opacity: 0;
+			}
+
+
+
+			textarea {
+				min-height: 202px;	
+			}
+
+			textarea::placeholder {
+				font-family: 'Overpass';
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 19.2px;
+				text-align: left;
+				text-underline-position: from-font;
+				text-decoration-skip-ink: none;
+
+			}
+
+			textarea::-webkit-resizer {
+				background-image: url("../../../../assets/resize\ arrow.svg") !important;
+				background: no-repeat;
+			}
+
+			label {
+				-webkit-transition: opacity 125ms linear;
+				opacity: 0; 
+				background-color: #000000;
+				font-family: 'Overpass';
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 19.2px;
+				text-align: left;
+				text-underline-position: from-font;
+				text-decoration-skip-ink: none;
+
+			}
+		}
+	}
+}
+
+.InputWraper:focus-within {
+	label {
+		opacity: 1 !important;
+	}
+}
+
+.FalseInputError {
+	display: none;
+	margin: 0;
+	padding-top: 10px;
+	font-family: Overpass;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14.4px;
+	text-align: left;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+	color: #E61C40;
+}
+
+.InputWraper {
+	position: relative;
+	width: 100%;
+	label {
+		font-family: "Overpass";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 19.2px;
+		text-align: left;
+		text-underline-position: from-font;
+		text-decoration-skip-ink: none;
+		position: absolute;
+		top: 14px;
+		left: 19px;
+		color: white;
+		z-index: 3;
+		background-color: #000000;
+		text-align: center;
+	}
+
+
+}
+
+.h1consec32 {
+	color: var(--cream, #FFFCF3);
+	font-family: Syne;
+	font-size: 78px;
+	font-weight: 800;
+	line-height: 78px;
+	letter-spacing: 0.01em;
+	text-align: center;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;	
+	/* 45px */
+	inline-size: fit-content;
+	letter-spacing: 0.45px;
+	padding-left: 6.5rem;
+	padding-bottom: 2.125rem;
+	padding-top: 15rem;
+	transition: color 125ms ease-in-out;
+
+	@media (max-width: 900px) {
+		padding-left: 1.5625rem;
+
+	}
+
+	@media (max-width: 900px) {
+		font-size: 2rem;
+		padding-left: 2rem;
+		animation-name: color-blink-wite;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		padding-top: 4rem;
+
+		@keyframes color-blink-wite {
+			0% {
+				color: #5988FF;
+			}
+
+			50% {
+				color: #6993ff;
+			}
+
+			100% {
+				color: #FFFCF3;
+			}
+		}
+	}
+
+	margin: 0;
+}
+
+.h1consec32:hover {
+	color: #5988FF;
+}
+
+.inputsubmit  {
+	width: 60%;
+	height: 68px;
+	border: #FFFCF3 solid 4px;
+	color: #FFFCF3;
+	background-color: transparent;
+
+	font-family: 'Overpass';
+	font-size: 23px;
+	font-weight: 400;
+	line-height: 27.6px;
+	text-align: center;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+	transition: all 125ms ease-in-out;
+
+	cursor: pointer;
+}
+
+.inputsubmit:disabled  {
+	opacity: 0.5;
+}
+
+.inputsubmit:valid  {
+	opacity: 1;
+}
+
+.inputsubmit:valid:hover {
+	width: 70%;
+
+	font-weight: 900;
+}
+
+.checkboxWraper {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	color: #FFFCF3;
+	margin-bottom: 34px;
+}
+
+.inputHoverInput {
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 18px;
+	height: 18px;
+	margin: 0;
+	border: #FFFCF3 solid 2px;
+	border-radius: 1.5px;
+	appearance: none;
+	cursor: pointer;
+}	
+
+.inputHoverInput:checked {
+	background-image: url('./../../../../assets/check_box.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+.inputHoverBackground {
+	position: relative;
+	z-index: 0;
+	border:solid 0px;
+	border-radius: 100%;
+	height: 24px;
+	width: 24px;
+	cursor: pointer;
+}
+
+.inputHoverBackground:hover {
+	background-color: #5988FF;
+	cursor: pointer;
+}
+
+.inputHoverSpan {
+	border: none;
+}
+
+.inputHoverSpan:hover {
+	color: #5988FF;
+	cursor: pointer;
+}
+
+.privacyPolicy {
+	margin-left: 12px;
+	height: fit-content;
+	font-family: 'Overpass';
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16.8px;
+	text-align: left;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+}
+  
+.checkboxWraper:has(.inputHoverSpan:hover) .inputHoverBackground {
+	background: #5988FF;
+	cursor: pointer;
+}
+
+.checkboxWraper:has(.inputHoverBackground:hover) .inputHoverSpan {
+	color: #5988FF;
+}

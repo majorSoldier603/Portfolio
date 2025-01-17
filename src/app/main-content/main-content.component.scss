@@ -1,0 +1,51 @@
+
+app-hero {
+    display: block;
+    width: 100%;
+    height: 100%;
+} 
+
+app-my-skills {
+    display: flex; 
+    justify-content: center;  
+    width: calc(100% - 200px);
+    margin: 0 100px 0 100px;
+}
+
+app-on-scroll-arrow {
+    display: flex;
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+}
+
+app-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+app-contact {
+    position: relative;
+}
+
+app-references {
+    display: flex;
+    height: 100%;   
+    margin-top: 120px;
+}
+
+
+div {
+    height: fit-content;
+    width: 100%;;
+    aspect-ratio: 16 / 7;
+
+    @media (max-width: 800px) {
+        aspect-ratio: 16 / 11;
+    }
+
+    @media (min-width: 1000px) {
+        height: 400px;
+    }
+}

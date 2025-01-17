@@ -1,23 +1,4 @@
 <app-header id="app-header" class="background-color: #FFFCF3; z-index: 100; position: relative;"></app-header>
-<app-hero id="app-hero"></app-hero>
-<app-about-me id="app-about-me"></app-about-me>
-
-<div *ngFor="let item of items; let i = index">
-    <app-on-scroll-arrow #scrollArrow style="transform: rotate(135deg);"></app-on-scroll-arrow>
-</div>
-
-<app-my-skills id="app-my-skills"></app-my-skills>
-
-<div *ngFor="let item of items; let i = index">
-    <app-on-scroll-arrow #scrollArrow style="transform: rotate(45deg);"></app-on-scroll-arrow>
-</div>
-
-<app-project-list id="app-project-list"></app-project-list>
-<app-references></app-references>
-
-<div *ngFor="let item of items; let i = index">
-    <app-on-scroll-arrow #scrollArrow style="transform: rotate(135deg);"></app-on-scroll-arrow>
-</div>
-
-<app-contact id="app-contact"></app-contact>
+<app-main-content></app-main-content>
 <app-footer></app-footer>
+<router-outlet></router-outlet>
