@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { OnScrollArrowComponent } from './on-scroll-arrow.component';
+import {OnScrollArrowComponent} from './on-scroll-arrow.component';
 
 describe('OnScrollArrowComponent', () => {
   let component: OnScrollArrowComponent;

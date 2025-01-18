@@ -1,221 +1,221 @@
 .on-scroll-arrow {
-	display: flex;
-	padding: 7rem 0 0 0;
-	position: absolute;
+  display: flex;
+  padding: 7rem 0 0 0;
+  position: absolute;
 
-	@keyframes down-right-animation-moba-xss {
-		0% {
-			opacity: 1;
-			width: 10rem;
-		}
+  @keyframes down-right-animation-moba-xss {
+    0% {
+      opacity: 1;
+      width: 10rem;
+    }
 
-		25% {
-			opacity: 0;
-		}
+    25% {
+      opacity: 0;
+    }
 
-		50% {
-			opacity: 1;
-			width: 15rem;
-			margin-left: 0rem;
-		}
+    50% {
+      opacity: 1;
+      width: 15rem;
+      margin-left: 0rem;
+    }
 
-		75% {
-			opacity: 0;
-		}
+    75% {
+      opacity: 0;
+    }
 
-		100% {
-			opacity: 1;
-			width: 10rem;
-			margin-left: 5rem;
-		}
-	}
+    100% {
+      opacity: 1;
+      width: 10rem;
+      margin-left: 5rem;
+    }
+  }
 
-	cursor: pointer;
-	transition: all 125ms;
+  cursor: pointer;
+  transition: all 125ms;
 
-	a {
-		position: absolute;
-		width: 100px;
-		top: 0px;
-		height: 100px;
-	}
+  a {
+    position: absolute;
+    width: 100px;
+    top: 0px;
+    height: 100px;
+  }
 
-	div {
-		width: 8rem;
-		height: 8rem;
-		transform: rotate(135deg);
-		border-top: 0.25rem solid #000 !important;
-		border-left: 0.25rem solid #000 !important;
-		position: relative;
-		left: -9.8rem;
-		top: -4rem;
+  div {
+    width: 8rem;
+    height: 8rem;
+    transform: rotate(135deg);
+    border-top: 0.25rem solid #000 !important;
+    border-left: 0.25rem solid #000 !important;
+    position: relative;
+    left: -9.8rem;
+    top: -4rem;
 
-		@media (max-width: 800px) {
-			width: 3rem;
-			height: 3rem;
-			left: -3.7rem;
-			top: -1.5rem;
-		}
-	}
+    @media (max-width: 800px) {
+      width: 3rem;
+      height: 3rem;
+      left: -3.7rem;
+      top: -1.5rem;
+    }
+  }
 
-	section {
-		transition: all 125ms;
-		content: "";
-		display: block;
-		width: 20rem;
-		height: 0.3rem;
-		background-color: rgb(0, 0, 0);
-		left: 0;
-		top: 0;
+  section {
+    transition: all 125ms;
+    content: "";
+    display: block;
+    width: 20rem;
+    height: 0.3rem;
+    background-color: rgb(0, 0, 0);
+    left: 0;
+    top: 0;
 
-		@media (max-width: 800px) {
-			width: 10rem;
-		}
+    @media (max-width: 800px) {
+      width: 10rem;
+    }
 
-		@media (max-width: 450px) {
-			width: 8rem;
-		}
-	}
+    @media (max-width: 450px) {
+      width: 8rem;
+    }
+  }
 
-	@keyframes down-right-animation {
-		0% {
-			opacity: 1;
-			width: 20rem;
-		}
+  @keyframes down-right-animation {
+    0% {
+      opacity: 1;
+      width: 20rem;
+    }
 
-		25% {
-			opacity: 0;
-		}
+    25% {
+      opacity: 0;
+    }
 
-		50% {
-			opacity: 1;
-			width: 25rem;
-			margin-left: 0rem;
-		}
+    50% {
+      opacity: 1;
+      width: 25rem;
+      margin-left: 0rem;
+    }
 
-		75% {
-			opacity: 0;
-		}
+    75% {
+      opacity: 0;
+    }
 
-		100% {
-			opacity: 1;
-			width: 20rem;
-			margin-left: 5rem;
-		}
-	}
+    100% {
+      opacity: 1;
+      width: 20rem;
+      margin-left: 5rem;
+    }
+  }
 
-	@keyframes down-right-animation-moba {
-		0% {
-			opacity: 1;
-			width: 10rem;
-		}
+  @keyframes down-right-animation-moba {
+    0% {
+      opacity: 1;
+      width: 10rem;
+    }
 
-		25% {
-			opacity: 0;
-		}
+    25% {
+      opacity: 0;
+    }
 
-		50% {
-			opacity: 1;
-			width: 15rem;
-			margin-left: 0rem;
-		}
+    50% {
+      opacity: 1;
+      width: 15rem;
+      margin-left: 0rem;
+    }
 
-		75% {
-			opacity: 0;
-		}
+    75% {
+      opacity: 0;
+    }
 
-		100% {
-			opacity: 1;
-			width: 10rem;
-			margin-left: 5rem;
-		}
-	}
+    100% {
+      opacity: 1;
+      width: 10rem;
+      margin-left: 5rem;
+    }
+  }
 
-	@keyframes down-right-animation-moba-xss {
-		0% {
-			opacity: 1;
-			width: 8rem;
-		}
+  @keyframes down-right-animation-moba-xss {
+    0% {
+      opacity: 1;
+      width: 8rem;
+    }
 
-		25% {
-			opacity: 0;
-		}
+    25% {
+      opacity: 0;
+    }
 
-		50% {
-			opacity: 1;
-			width: 12rem;
-			margin-left: 0rem;
-		}
+    50% {
+      opacity: 1;
+      width: 12rem;
+      margin-left: 0rem;
+    }
 
-		75% {
-			opacity: 0;
-		}
+    75% {
+      opacity: 0;
+    }
 
-		100% {
-			opacity: 1;
-			width: 8rem;
-			margin-left: 5rem;
-		}
-	}
+    100% {
+      opacity: 1;
+      width: 8rem;
+      margin-left: 5rem;
+    }
+  }
 }
 
 .on-scroll-arrow.hover {
-	section {
-		animation: down-right-animation 0.2s ease-in-out forwards;
+  section {
+    animation: down-right-animation 0.2s ease-in-out forwards;
 
-		@media (max-width: 800px) {
-			animation: down-right-animation-moba 0.2s ease-in-out forwards;
-		}
+    @media (max-width: 800px) {
+      animation: down-right-animation-moba 0.2s ease-in-out forwards;
+    }
 
-		@media (max-width: 450px) {
-			animation: down-right-animation-moba-xss 0.2s ease-in-out forwards;
-		}
-	}
+    @media (max-width: 450px) {
+      animation: down-right-animation-moba-xss 0.2s ease-in-out forwards;
+    }
+  }
 }
 
 
 #arrow0 {
-    left: -32rem;
-    top: -42rem;
+  left: -32rem;
+  top: -42rem;
 
-	@media (max-width: 800px) {
-		left: -10rem;
-        top: -26rem;
-	}
+  @media (max-width: 800px) {
+    left: -10rem;
+    top: -26rem;
+  }
 
-	@media (max-width: 450px) {
-		left: -12rem;
-        top: -21rem;
-	}
+  @media (max-width: 450px) {
+    left: -12rem;
+    top: -21rem;
+  }
 }
 
 #arrow1 {
-    left: 13rem;
-    top: -16rem;
+  left: 13rem;
+  top: -16rem;
 
-	@media (max-width: 800px) {
-        left: 10rem;
-        top: -7rem;
+  @media (max-width: 800px) {
+    left: 10rem;
+    top: -7rem;
 
-	}
+  }
 
-	@media (max-width: 450px) {
-        left: 6rem;
-        top: -8rem;
-	}
+  @media (max-width: 450px) {
+    left: 6rem;
+    top: -8rem;
+  }
 }
 
 #arrow2 {
-    left: -28rem;
-    top: -42rem;
+  left: -28rem;
+  top: -42rem;
 
-	@media (max-width: 800px) {
-		left: -11rem;
-        top: -31rem;
-	}
+  @media (max-width: 800px) {
+    left: -11rem;
+    top: -31rem;
+  }
 
-	@media (max-width: 450px) {
-        left: -10rem;
-        top: -24rem;
-	}
+  @media (max-width: 450px) {
+    left: -10rem;
+    top: -24rem;
+  }
 }

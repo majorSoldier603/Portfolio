@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { ContactScrollUpComponent } from './contact-scroll-up.component';
+import {ContactScrollUpComponent} from './contact-scroll-up.component';
 
 describe('ContactScrollUpComponent', () => {
   let component: ContactScrollUpComponent;

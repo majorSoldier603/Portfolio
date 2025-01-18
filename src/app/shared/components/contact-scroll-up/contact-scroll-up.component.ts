@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { ScrollService } from "../../services/ScrollService/scroll.service";
+import {Component} from '@angular/core';
+import {ScrollService} from "../../services/ScrollService/scroll.service";
 
 @Component({
   standalone: true,
@@ -9,9 +9,10 @@ import { ScrollService } from "../../services/ScrollService/scroll.service";
 })
 export class ContactScrollUpComponent {
 
-  constructor(private scrollService: ScrollService) {}
+  constructor(private scrollService: ScrollService) {
+  }
 
   scrollTo(elementId: string, offset: number) {
-		this.scrollService.scrollToElement(elementId, offset);
-	}
+    this.scrollService.scrollToElement(elementId, offset);
+  }
 }

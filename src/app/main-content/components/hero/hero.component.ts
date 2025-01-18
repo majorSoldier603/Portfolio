@@ -1,46 +1,48 @@
-import { Component, OnInit } from '@angular/core';
-import { ScrollService } from "../../../shared/services/ScrollService/scroll.service";
-import { FormsModule } from '@angular/forms';
+import {Component, OnInit} from '@angular/core';
+import {ScrollService} from "../../../shared/services/ScrollService/scroll.service";
+import {FormsModule} from '@angular/forms';
 
 @Component({
-	selector: 'app-hero',
-	standalone: true,
-	imports: [FormsModule],
-	templateUrl: './hero.component.html',
-	styleUrls: ['./hero.component.scss']
+  selector: 'app-hero',
+  standalone: true,
+  imports: [FormsModule],
+  templateUrl: './hero.component.html',
+  styleUrls: ['./hero.component.scss']
 })
 export class HeroComponent implements OnInit {
-	constructor(private scrollService: ScrollService) {}
+  bgColor: string = 'FFFCF3';
+  textColor: string = 'black';
 
-	ngOnInit(): void {
-		this.fadeInOut(true)
-	}
-	fadeInOut(isFadeOut:boolean) {
-		const element = document.querySelector('.fade-in-out');
-		if (element) {
-			if (isFadeOut) {
-				element.classList.add('fade-out');
-			} else {
-				element.classList.remove('fade-out');
-			}
-		}
-	}
+  constructor(private scrollService: ScrollService) {
+  }
 
-	bgColor: string = 'FFFCF3';
-	textColor: string = 'black';
+  ngOnInit(): void {
+    this.fadeInOut(true)
+  }
 
-	changeBntColor(isBlack:boolean) {
-		if (isBlack) {
-			this.bgColor = 'black';
-			this.textColor = 'white';
+  fadeInOut(isFadeOut: boolean) {
+    const element = document.querySelector('.fade-in-out');
+    if (element) {
+      if (isFadeOut) {
+        element.classList.add('fade-out');
+      } else {
+        element.classList.remove('fade-out');
+      }
+    }
+  }
 
-		} else {
-			this.bgColor = '#FFFCF3';
-			this.textColor = 'black';
-		}
-	}
+  changeBntColor(isBlack: boolean) {
+    if (isBlack) {
+      this.bgColor = 'black';
+      this.textColor = 'white';
 
-	scrollTo(elementId: string, offset: number) {
-		this.scrollService.scrollToElement(elementId, offset);
-	}
+    } else {
+      this.bgColor = '#FFFCF3';
+      this.textColor = 'black';
+    }
+  }
+
+  scrollTo(elementId: string, offset: number) {
+    this.scrollService.scrollToElement(elementId, offset);
+  }
 }

@@ -1,54 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
 #app-root-mainWrapper {
-	max-width: 1920px;
-	max-height: 1920px;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-	max-height: 1080px;
+  max-width: 1920px;
+  max-height: 1920px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 1080px;
 }
 
 app-root {
-	overflow-y: scroll;
-	overflow-x: hidden;
-	display: block;
-	width: 100%;
-	height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 #mainbody {
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	margin: 0;
-	background: var(--cream, #FFFCF3);
-	overflow-x: hidden;
-    overflow-y: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background: var(--cream, #FFFCF3);
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .stop-scrolling {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .d-none {
-	display: none;
+  display: none;
 }
 
 .d-flex {
-    display: flex;
+  display: flex;
 }
 
 .justify-content {
-    justify-content: center;
+  justify-content: center;
 }
 
 .align-items {
-    align-items: center;
+  align-items: center;
 }
 
 body {
-	margin: 0;
+  margin: 0;
 }

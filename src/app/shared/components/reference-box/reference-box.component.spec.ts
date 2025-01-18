@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { ReferenceBoxComponent } from './reference-box.component';
+import {ReferenceBoxComponent} from './reference-box.component';
 
 describe('ReferenceBoxComponent', () => {
   let component: ReferenceBoxComponent;
@@ -10,7 +10,7 @@ describe('ReferenceBoxComponent', () => {
     await TestBed.configureTestingModule({
       imports: [ReferenceBoxComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(ReferenceBoxComponent);
     component = fixture.componentInstance;

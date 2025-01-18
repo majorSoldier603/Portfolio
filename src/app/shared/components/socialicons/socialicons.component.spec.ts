@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { SocialiconsComponent } from './socialicons.component';
+import {SocialiconsComponent} from './socialicons.component';
 
 describe('SocialiconsComponent', () => {
   let component: SocialiconsComponent;

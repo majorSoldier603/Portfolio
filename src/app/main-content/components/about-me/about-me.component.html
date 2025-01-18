@@ -1,27 +1,31 @@
 <body>
 <section>
-	<h1>About me</h1>
-	<div class="mainWrapper">
-		<main>
-			<h2>I am a Front-end developer based in North Rhine-Westphalia, Germany. I enjoy helping designers and companies bring their ideas into real life.  I am looking forward to continuing my developer career with a job in a junior web developer position. <br><br> If you think I’d be a good match for your projects, contact me!</h2>
-			<div class="textWithIconsWrapper">
-				<div>
-					<img src="../../assets/house.svg" alt="" srcset="">
-					<h2>Based in Munich</h2>
-				</div>
-				<div>
-					<img src="../../assets/laptop_chromebook.svg" alt="" srcset="">
-					<h2>Open to work Remote</h2>
-				</div>
-			</div>
-			<button id="app-about-me-bnt" (mousedown)="changeBntColor(true)" (mouseup)="changeBntColor(false)" [ngStyle]="{ 'background-color': bgColor }" type="button" (click)="scrollTo('app-contact', 0)"><a [ngStyle]="{ 'color': textColor }">Let’s talk</a></button>
-		</main>
+  <h1>About me</h1>
+  <div class="mainWrapper">
+    <main>
+      <h2>I am a Front-end developer based in North Rhine-Westphalia, Germany. I enjoy helping designers and companies
+        bring their ideas into real life. I am looking forward to continuing my developer career with a job in a junior
+        web developer position. <br><br> If you think I’d be a good match for your projects, contact me!</h2>
+      <div class="textWithIconsWrapper">
+        <div>
+          <img alt="" src="../../assets/house.svg" srcset="">
+          <h2>Based in Munich</h2>
+        </div>
+        <div>
+          <img alt="" src="../../assets/laptop_chromebook.svg" srcset="">
+          <h2>Open to work Remote</h2>
+        </div>
+      </div>
+      <button (click)="scrollTo('app-contact', 0)" (mousedown)="changeBntColor(true)" (mouseup)="changeBntColor(false)"
+              [ngStyle]="{ 'background-color': bgColor }" id="app-about-me-bnt" type="button"><a
+        [ngStyle]="{ 'color': textColor }">Let’s talk</a></button>
+    </main>
 
 
-		<div class="imageContainer" (mouseenter)="fadeInOut(false)" (mouseleave)="fadeInOut(true)">
-			<div class="fade-in-out"></div>
-			<img src="../../assets/LULS SOME NAEMEEEMEHJEEHEHEHEH.png" alt="" srcset="">
-		</div>
-	</div>
+    <div (mouseenter)="fadeInOut(false)" (mouseleave)="fadeInOut(true)" class="imageContainer">
+      <div class="fade-in-out"></div>
+      <img alt="" src="../../assets/LULS SOME NAEMEEEMEHJEEHEHEHEH.png" srcset="">
+    </div>
+  </div>
 </section>
 </body>

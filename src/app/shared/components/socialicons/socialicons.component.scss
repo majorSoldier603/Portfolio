@@ -1,22 +1,22 @@
 .soc-iconsDiv {
-    display: flex;
-    justify-content: space-between;
-    height: 30px;
-    width: 100%;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  width: 100%;
+  position: relative;
 
-    a {
-        width: 1.875rem;
-        height: 1.875rem;
-    }
+  a {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
 
-    img {
-        transition: all 125ms;
-        bottom: 0;
-        position: absolute;
-    }
+  img {
+    transition: all 125ms;
+    bottom: 0;
+    position: absolute;
+  }
 
-    img:hover {
-        padding-bottom: 1rem;
-    }
+  img:hover {
+    padding-bottom: 1rem;
+  }
 }
