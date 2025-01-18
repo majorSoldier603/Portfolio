@@ -6,7 +6,7 @@ import { MySkillsComponent } from './components/my-skills/my-skills.component';
 import { ProjectListComponent } from './components/project-list/project-list.component';
 import { ReferencesComponent } from './components/references/references.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { NgFor } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 @Component({
 	selector: 'app-main-content',
@@ -19,7 +19,7 @@ import { NgFor } from '@angular/common';
 		ProjectListComponent, 
 		ReferencesComponent, 
 		ContactComponent,
-		NgFor
+		CommonModule,
 	],
 	templateUrl: './main-content.component.html',
 	styleUrl: './main-content.component.scss'
