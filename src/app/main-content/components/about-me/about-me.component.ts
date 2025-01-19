@@ -1,11 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {ScrollService} from "../../../shared/services/ScrollService/scroll.service";
 import {NgStyle} from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [NgStyle],
+  imports: [NgStyle, TranslateModule],
   templateUrl: './about-me.component.html',
   styleUrls: ['./about-me.component.scss']
 })

@@ -1,5 +1,5 @@
 .footer-sec {
-  @media (max-width: 900px) {
+  @media (width <= 900px) {
     padding: 2.25rem;
   }
 
@@ -9,24 +9,26 @@
   background-color: black;
   display: flex;
   flex-wrap: wrap;
-  @media (max-width: 900px) {
+
+  @media (width <= 900px) {
     justify-content: center;
   }
+
   justify-content: space-between;
 
   div {
-    @media (max-width: 900px) {
+    @media (width <= 900px) {
       display: flex;
-      flex-wrap: wrap;
+      flex-flow: column wrap;
       align-items: center;
-      flex-direction: column;
       width: 100%;
     }
 
     img {
       object-fit: contain;
       width: 120px;
-      @media (max-width: 900px) {
+
+      @media (width <= 900px) {
         order: 2;
         width: fit-content;
         padding-top: 2.5rem;
@@ -34,7 +36,6 @@
     }
 
     p {
-
       color: var(--cream, #FFFCF3);
       font-family: Poppins;
       font-size: 23px;
@@ -42,7 +43,7 @@
       font-weight: 400;
       line-height: 120%;
 
-      @media (max-width: 900px) {
+      @media (width <= 900px) {
         order: 3;
         font-family: Overpass;
         font-size: 23px;
@@ -59,7 +60,7 @@
       order: 1;
       width: 75%;
 
-      @media (min-width: 900px) {
+      @media (width >= 900px) {
         display: none;
       }
     }
@@ -67,30 +68,29 @@
     app-legaltextanibnt {
       order: 4;
 
-      @media (min-width: 900px) {
+      @media (width >= 900px) {
         display: none;
       }
     }
   }
 
   section {
-    @media (max-width: 900px) {
+    @media (width <= 900px) {
       width: fit-content;
     }
 
-    @media (min-width: 900px) {
+    @media (width >= 900px) {
       width: 30%;
     }
 
     app-socialicons {
-      @media (max-width: 900px) {
+      @media (width <= 900px) {
         display: none;
       }
     }
 
     app-legaltextanibnt {
-      @media (max-width: 900px) {
-
+      @media (width <= 900px) {
         display: none;
       }
     }

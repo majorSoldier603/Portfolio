@@ -4,7 +4,7 @@ import {SocialiconsComponent} from '../socialicons/socialicons.component';
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [SocialiconsComponent],
+  imports: [ SocialiconsComponent],
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss', '../../../shared/css/animatedVarText/animatedVarText.component.scss'],
 })

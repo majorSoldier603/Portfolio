@@ -1,0 +1,45 @@
+{
+    "app": {
+      "hello": "Hallo, Welt!"
+    },
+    "aboutMe": {
+        "text": "Ich bin ein Frontend-Entwickler mit Sitz in Nordrhein-Westfalen. Ich helfe Designern und Unternehmen gerne dabei, ihre Ideen in die Tat umzusetzen. Ich freue mich darauf, meine Entwickler-Karriere mit einem Job als Junior-Webentwickler fortzusetzen.",
+        "secParagraph": "Wenn Sie denken, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich!",
+        "location": "Sitz in Kreis Recklinghausen",
+        "remote": "Offen für Remote-Arbeit"
+    },
+    "mySkills": {
+        "commentpart1": "Sie sehen die benötigte Fähigkeit nicht?",
+        "commentpart2": " Kontaktieren Sie mich ",
+        "commentpart3": "Ich bin immer lernbereit!"
+    },
+    "portfolio": {
+        "headtext": "Probieren Sie meine neuesten Entwicklungsprojekte aus und sehen Sie sich deren Code an.",
+        "jointext": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag & Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+        "elpollotext": "Ein einfaches Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf Sharkie, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen."
+    },
+    "references": {
+        "headtext": "I thrive both independently and as part of a team. Here’s what my colleagues have to say about working with me.",
+        "refOne": "Michael hat das Team durch seine tolle Organisation und klare Kommunikation wirklich zusammengehalten. Ohne sein Engagement wären wir nicht so weit gekommen.",
+        "refTow": "Michi war ein super Teamkollege bei DA. Durch sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, haben wir maßgeblich dazu beigetragen, dass wir unsere Ziele erreicht haben.",
+        "refThree": "Es war eine große Freude mit Michael zu arbeiten. Er versteht es, Teammitglieder zu motivieren und zu ermutigen, die bestmögliche Arbeit abzuliefern und trägt immer etwas zum Brainstorming bei. Was das Wohl der Gruppenmitglieder angeht, war er immer da und bereit, anderen zuzuhören und zu helfen, und das mit einem großartigen Sinn für Humor."
+    },
+    "contactMe": {
+        "headtext": "Möchten Sie ein neues Projekt besprechen?",
+        "comment": "Sag Hallo! Lass uns deine Ideen besprechen und umsetzen",
+        "name": "Ihr Name",
+        "nameRequired": "Ihr Name ist erforderlich",
+        "nameInvalid": "Ihr Name ist ungültig",
+        "email": "Ihre E-Mail",
+        "emailRequired": "Ihre E-Mail ist erforderlich",
+        "emailInvalid": "Ihre E-Mail ist ungültig",
+        "message": "Ihre Nachricht",
+        "messageRequired": "Ihre Nachricht ist erforderlich",
+        "messageInvalid": "Ihre Nachricht ist ungültig",
+        "checkBoxTextPartOne": "Ich habe dies gelesen und stimme der.",
+        "checkBoxTextPartTow": "Datenschutzrichtlinie",
+        "checkBoxTextPartThree": "Verarbeitung meiner Daten wie beschrieben zu",
+        "checkBoxRequired": "Bitte akzeptieren Sie die Datenschutzrichtlinie"
+    }
+  }
+  

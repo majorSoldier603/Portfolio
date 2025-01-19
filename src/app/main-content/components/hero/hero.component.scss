@@ -14,9 +14,11 @@ body {
     text-align: center;
     font-family: Syne;
     font-size: 128px;
-    @media (max-width: 1064px) {
+
+    @media (width <= 1064px) {
       font-size: 40px;
     }
+
     font-style: normal;
     font-weight: 800;
     line-height: 100%; /* 128px */
@@ -30,9 +32,11 @@ body {
     text-align: end;
     font-family: Overpass;
     font-size: 48px;
-    @media (max-width: 900px) {
+
+    @media (width <= 900px) {
       font-size: 23px;
     }
+
     font-style: normal;
     font-weight: 700;
     line-height: 100%; /* 48px */
@@ -51,9 +55,11 @@ body {
   hr {
     border-top: 4px solid black;
     width: 50%;
-    @media (max-width: 900px) {
+
+    @media (width <= 900px) {
       width: 40%;
     }
+
     margin: 0;
     padding: 0;
   }
@@ -62,13 +68,12 @@ body {
 .idiot {
   display: flex;
   flex-direction: row;
-  align-content: center;
-  justify-content: space-between;
+  place-content: center space-between;
   align-items: center;
   width: 100%;
-  margin: 0 100px 0 100px;
+  margin: 0 100px;
   position: relative;
-  border: 0px solid red;
+  border: 0 solid red;
   height: 400px;
   min-width: 30px;
 
@@ -106,7 +111,7 @@ body {
 
   .ihatecsscalsses {
     position: absolute;
-    right: 0px;
+    right: 0;
     height: 100%;
 
     div {
@@ -150,16 +155,18 @@ body {
 .arrow-down::before {
   width: 4px;
   height: 50%;
-  @media (max-width: 900px) {
+
+  @media (width <= 900px) {
     height: 50%;
   }
+
   left: 22px;
-  background: currentColor;
+  background: currentcolor;
 }
 
 $base: 1%;
 
-@media (min-width: 900px) {
+@media (width >= 900px) {
   @keyframes move-arrow {
     0% {
       transform: translateY($base * -150);
@@ -171,7 +178,7 @@ $base: 1%;
   }
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   @keyframes move-arrow {
     0% {
       transform: translateY($base * -150);

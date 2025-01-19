@@ -1,10 +1,11 @@
 import {Component} from '@angular/core';
 import {ScrollService} from "../../../shared/services/ScrollService/scroll.service";
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-my-skills',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './my-skills.component.html',
   styleUrls: ['./my-skills.component.scss', '../../../shared/css/animatedVarText/animatedVarText.component.scss']
 })

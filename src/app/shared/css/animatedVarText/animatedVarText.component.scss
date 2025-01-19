@@ -14,7 +14,6 @@
 
   &::after {
     transition: all 125ms;
-
     content: '';
     opacity: 0;
     display: flex;
@@ -29,11 +28,10 @@
   &:hover {
     font-weight: 900;
     transition: all 125ms;
-    padding-right: 0px;
+    padding-right: 0;
 
     &::after {
       transition: all 125ms;
-
       content: '';
       opacity: 1;
       display: flex;

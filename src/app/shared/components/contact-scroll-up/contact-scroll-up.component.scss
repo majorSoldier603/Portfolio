@@ -1,5 +1,5 @@
 .contact-scroll-up {
-  @media (max-width: 900px) {
+  @media (width <= 900px) {
     display: none;
   }
 
@@ -12,7 +12,7 @@
   a {
     position: absolute;
     width: 100px;
-    top: 0px;
+    top: 0;
     height: 100px;
   }
 

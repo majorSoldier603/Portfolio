@@ -1,0 +1,45 @@
+{
+    "app": {
+      "hello": "Hello, World!"
+    },
+    "aboutMe": {
+        "text": "I am a Front-end developer based in North Rhine-Westphalia, Germany. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my developer career with a job in a junior web developer position. ",
+        "secParagraph": "If you think I’d be a good match for your projects, contact me!",
+        "location": "Seat in the district of Recklinghausen.",
+        "remote": "Open to work Remote"
+    },
+    "mySkills": {
+        "commentpart1": "Don’t see the skill you need?",
+        "commentpart2": " Contact me ",
+        "commentpart3": "I’m always ready to learn!"
+    },
+    "portfolio": {
+        "headtext": "Feel free to try out my latest development projects and look into their code.",
+        "jointext": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "elpollotext": "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale."
+    },
+    "references": {
+        "headtext": "I thrive both independently and as part of a team. Here’s what my colleagues have to say about working with me.",
+        "refOne": "Michael really kept the team together with his great organization and clear communication. We wouldn`t have got this far without his commitment.",
+        "refTow": "Michi was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals.",
+        "refThree": "It was a great pleasure to work with Michael. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well."
+    },
+    "contactMe": {
+        "headtext": "Want to discuss a new project?",
+        "comment": "Say hello! let's discuss your ideas and make it happen",
+        "name": "Your name",
+        "nameRequired": "Your name is required",
+        "nameInvalid": "Your name is invalid",
+        "email": "Your email",
+        "emailRequired": "Your email is required",
+        "emailInvalid": "Your email is invalid",
+        "message": "Your message",
+        "messageRequired": "Your message is required",
+        "messageInvalid": "Your message is invalid",
+        "checkBoxTextPartOne": "I've read the and agree to the",
+        "checkBoxTextPartTow": "privacy policy",
+        "checkBoxTextPartThree": "processing of my data as outlined.",
+        "checkBoxRequired": "Please accept the privacy policy"
+    }
+  }
+  

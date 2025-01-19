@@ -1,15 +1,20 @@
 import {Component} from '@angular/core';
 import {ProjectPreviewComponent} from '../../../shared/components/project-preview/project-preview.component';
 import {NgForOf} from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-project-list',
   standalone: true,
-  imports: [ProjectPreviewComponent, NgForOf],
+  imports: [ProjectPreviewComponent, NgForOf, TranslateModule],
   templateUrl: './project-list.component.html',
   styleUrls: ['./project-list.component.scss']
 })
 export class ProjectListComponent {
+
+  portfolio = {
+    headtext: 'portfolio.headtext',
+  };
 
   project: any = {
     title: '',
@@ -27,7 +32,7 @@ export class ProjectListComponent {
     Link: 'https://maximilianstark.dev/Join/index.html',
     techstack: 'JavaScript | HTML | CSS',
     gitHubLink: 'https://github.com/majorSoldier603/Join',
-    tldr: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+    tldr: 'portfolio.jointext',
     bntname: 'Github'
   }, {
     title: 'El Pollo Loco',
@@ -35,7 +40,7 @@ export class ProjectListComponent {
     Link: 'https://maximilianstark.dev/El-Pollo-Loco/index.html',
     techstack: 'JavaScript | HTML | CSS',
     gitHubLink: 'https://github.com/majorSoldier603/El-Pollo-Loco',
-    tldr: 'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
+    tldr:  'portfolio.elpollotext',
     bntname: 'Github'
   }
   ]

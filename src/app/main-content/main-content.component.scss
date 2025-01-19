@@ -8,7 +8,7 @@ app-my-skills {
   display: flex;
   justify-content: center;
   width: calc(100% - 200px);
-  margin: 0 100px 0 100px;
+  margin: 0 100px;
 }
 
 app-on-scroll-arrow {
@@ -40,11 +40,11 @@ div {
   width: 100%;;
   aspect-ratio: 16 / 7;
 
-  @media (max-width: 800px) {
+  @media (width <= 800px) {
     aspect-ratio: 16 / 11;
   }
 
-  @media (min-width: 1000px) {
+  @media (width >= 1000px) {
     height: 400px;
   }
 }

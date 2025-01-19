@@ -5,7 +5,7 @@
   box-sizing: border-box;
   padding: 4rem 2rem;
 
-  @media (max-width: 900px) {
+  @media (width <= 900px) {
     padding: 0;
   }
 
@@ -15,7 +15,7 @@
     top: -117px;
     padding-left: 22px;
     padding-right: 22px;
-    font-family: 'Syne', 'Arial', 'Verdana', sans-serif;
+    font-family: Syne, Arial, Verdana, sans-serif;
     font-weight: 800;
     font-size: 78px;
     background-color: #FFFCF3;
@@ -25,13 +25,13 @@
       color: #5988FF;
     }
 
-    @media (max-width: 1350px) {
+    @media (width <= 1350px) {
       top: -96px;
       left: calc((100% - 224px) - 50%);
       font-size: 62px;
     }
 
-    @media (max-width: 880px) {
+    @media (width <= 880px) {
       top: -73px;
       left: calc((100% - 168px) - 50%);
       padding-left: 16px;
@@ -42,7 +42,7 @@
       animation-iteration-count: infinite;
     }
 
-    @media (max-width: 580px) {
+    @media (width <= 580px) {
       padding-left: 10px;
       padding-right: 10px;
       top: -67px;
@@ -50,7 +50,7 @@
       font-size: 42px;
     }
 
-    @media (max-width: 385px) {
+    @media (width <= 385px) {
       padding-left: 3px;
       padding-right: 3px;
       top: -57px;
@@ -67,7 +67,7 @@
     img {
       margin-right: 28.5px;
 
-      @media (max-width: 900px) {
+      @media (width <= 900px) {
         animation: none;
         margin-right: 8px;
       }
@@ -76,7 +76,7 @@
         animation: icon-animation-circle 280ms;
         animation-delay: 280ms;
 
-        @media (max-width: 900px) {
+        @media (width <= 900px) {
           animation: none;
         }
       }
@@ -90,13 +90,13 @@
       line-height: 26.4px;
       text-align: left;
 
-      @media (max-width: 900px) {
+      @media (width <= 900px) {
         display: flex;
         flex-direction: column;
       }
 
       p {
-        margin: 0px 5px 0px 5px;
+        margin: 0 5px;
         color: #6993ff !important;
         font-family: Overpass !important;
         font-size: 22px !important;
@@ -128,7 +128,7 @@
     img {
       width: 100%;
 
-      @media (max-width: 900px) {
+      @media (width <= 900px) {
         min-width: 65px;
       }
     }
@@ -160,7 +160,7 @@
 
 @keyframes icon-animation {
   0% {
-    transform: translateX(0px) scale(1);
+    transform: translateX(0) scale(1);
   }
 
   25% {
@@ -168,7 +168,7 @@
   }
 
   50% {
-    transform: translateX(0px) scale(0.3);
+    transform: translateX(0) scale(0.3);
   }
 
   75% {
@@ -176,14 +176,14 @@
   }
 
   100% {
-    transform: translateX(0px) scale(1);
+    transform: translateX(0) scale(1);
   }
 }
 
 
 @keyframes icon-animation-circle {
   0% {
-    transform: translateX(0px) scale(1);
+    transform: translateX(0) scale(1);
   }
 
   25% {
@@ -191,7 +191,7 @@
   }
 
   50% {
-    transform: translateX(0px) scale(0.3);
+    transform: translateX(0) scale(0.3);
   }
 
   75% {
@@ -199,6 +199,6 @@
   }
 
   100% {
-    transform: translateX(0px) scale(1);
+    transform: translateX(0) scale(1);
   }
 }

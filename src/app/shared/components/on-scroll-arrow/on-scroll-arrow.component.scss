@@ -1,6 +1,6 @@
 .on-scroll-arrow {
   display: flex;
-  padding: 7rem 0 0 0;
+  padding: 7rem 0 0;
   position: absolute;
 
   @keyframes down-right-animation-moba-xss {
@@ -16,7 +16,7 @@
     50% {
       opacity: 1;
       width: 15rem;
-      margin-left: 0rem;
+      margin-left: 0;
     }
 
     75% {
@@ -36,7 +36,7 @@
   a {
     position: absolute;
     width: 100px;
-    top: 0px;
+    top: 0;
     height: 100px;
   }
 
@@ -50,7 +50,7 @@
     left: -9.8rem;
     top: -4rem;
 
-    @media (max-width: 800px) {
+    @media (width <= 800px) {
       width: 3rem;
       height: 3rem;
       left: -3.7rem;
@@ -64,15 +64,15 @@
     display: block;
     width: 20rem;
     height: 0.3rem;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0 0 0);
     left: 0;
     top: 0;
 
-    @media (max-width: 800px) {
+    @media (width <= 800px) {
       width: 10rem;
     }
 
-    @media (max-width: 450px) {
+    @media (width <= 450px) {
       width: 8rem;
     }
   }
@@ -90,7 +90,7 @@
     50% {
       opacity: 1;
       width: 25rem;
-      margin-left: 0rem;
+      margin-left: 0;
     }
 
     75% {
@@ -117,7 +117,7 @@
     50% {
       opacity: 1;
       width: 15rem;
-      margin-left: 0rem;
+      margin-left: 0;
     }
 
     75% {
@@ -144,7 +144,7 @@
     50% {
       opacity: 1;
       width: 12rem;
-      margin-left: 0rem;
+      margin-left: 0;
     }
 
     75% {
@@ -163,11 +163,11 @@
   section {
     animation: down-right-animation 0.2s ease-in-out forwards;
 
-    @media (max-width: 800px) {
+    @media (width <= 800px) {
       animation: down-right-animation-moba 0.2s ease-in-out forwards;
     }
 
-    @media (max-width: 450px) {
+    @media (width <= 450px) {
       animation: down-right-animation-moba-xss 0.2s ease-in-out forwards;
     }
   }
@@ -178,12 +178,12 @@
   left: -32rem;
   top: -42rem;
 
-  @media (max-width: 800px) {
+  @media (width <= 800px) {
     left: -10rem;
     top: -26rem;
   }
 
-  @media (max-width: 450px) {
+  @media (width <= 450px) {
     left: -12rem;
     top: -21rem;
   }
@@ -193,13 +193,13 @@
   left: 13rem;
   top: -16rem;
 
-  @media (max-width: 800px) {
+  @media (width <= 800px) {
     left: 10rem;
     top: -7rem;
 
   }
 
-  @media (max-width: 450px) {
+  @media (width <= 450px) {
     left: 6rem;
     top: -8rem;
   }
@@ -209,12 +209,12 @@
   left: -28rem;
   top: -42rem;
 
-  @media (max-width: 800px) {
+  @media (width <= 800px) {
     left: -11rem;
     top: -31rem;
   }
 
-  @media (max-width: 450px) {
+  @media (width <= 450px) {
     left: -10rem;
     top: -24rem;
   }

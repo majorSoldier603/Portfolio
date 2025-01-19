@@ -1,9 +1,10 @@
 import {Component, Input, OnInit} from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-project-preview',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './project-preview.component.html',
   styleUrls: ['./project-preview.component.scss']
 })

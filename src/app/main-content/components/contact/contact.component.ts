@@ -2,23 +2,45 @@ import {Component, HostListener, inject} from '@angular/core';
 import {ContactScrollUpComponent} from "../../../shared/components/contact-scroll-up/contact-scroll-up.component";
 import {FormsModule, NgForm} from '@angular/forms';
 import {HttpClient} from '@angular/common/http';
+import { RouterLink } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, ContactScrollUpComponent],
+  imports: [FormsModule, ContactScrollUpComponent, RouterLink, TranslateModule],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
   buttonText: string = 'Send message';
+
   contactData = {
     name: '',
     email: '',
     message: '',
     privacyPolicy: false
   }
+
+  contactMeTr = {
+    headtext: "contactMe.headtext",
+    comment: "contactMe.comment",
+    name: "contactMe.name",
+    nameRequired: "contactMe.nameRequired",
+    nameInvalid: "contactMe.nameInvalid",
+    email: "contactMe.email",
+    emailRequired: "contactMe.emailRequired",
+    emailInvalid: "contactMe.emailInvalid",
+    message: "contactMe.message",
+    messageRequired: "contactMe.messageRequired",
+    messageInvalid: "contactMe.messageInvalid",
+    checkBoxTextPartOne: "contactMe.checkBoxTextPartOne",
+    checkBoxTextPartTow: "contactMe.checkBoxTextPartTow",
+    checkBoxTextPartThree: "contactMe.checkBoxTextPartThree",
+    checkBoxRequired: "contactMe.checkBoxRequired"
+  }
+
   mailTest = false;
   http = inject(HttpClient);
   post = {

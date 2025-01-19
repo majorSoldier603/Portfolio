@@ -1,7 +1,7 @@
 body {
   display: flex;
   justify-content: center;
-  margin: 0 100px 0 100px;
+  margin: 0 100px;
 
   section {
     display: flex;
@@ -10,21 +10,20 @@ body {
     width: 100%;
 
     h1 {
-      font-family: Syne;
+      font-family: "Syne";
       font-size: 78px;
       font-weight: 800;
       line-height: 78px;
-      letter-spacing: 0.01em;
       color: var(--black, #000);
       letter-spacing: 0.78px;
       float: left;
-      text-shadow: 0px 4px rgba(0, 0, 0, 0.25);
+      text-shadow: 0 4px rgb(0 0 0 / 25%);
       width: fit-content;
       transition: all 125ms ease-in-out;
-      margin: 48px 0 48px 0;
+      margin: 48px 0;
 
-      @media (max-width: 900px) {
-        font-family: Syne;
+      @media (width <= 900px) {
+        font-family: "Syne";
         font-size: 36px;
         font-weight: 800;
         line-height: 36px;
@@ -40,11 +39,13 @@ body {
           0% {
             color: #5988FF;
           }
+
           50% {
             color: #6993ff;
           }
+
           100% {
-            color: #000000;
+            color: #000;
           }
         }
       }
@@ -59,7 +60,7 @@ body {
       flex-direction: row;
       justify-content: space-between;
 
-      @media (max-width: 900px) {
+      @media (width <= 900px) {
         flex-direction: column;
       }
 
@@ -70,7 +71,7 @@ body {
         margin-right: 10px;
         width: 50%;
 
-        @media (max-width: 900px) {
+        @media (width <= 900px) {
           padding-bottom: 5px;
           width: 100%;
           margin: 0;
@@ -78,13 +79,13 @@ body {
 
         h2 {
           color: var(--black, #000);
-          font-family: "Overpass";
+          font-family: Overpass;
           font-size: 22px;
           font-style: normal;
           font-weight: 400;
           line-height: 120%; /* 27.6px */
 
-          @media (max-width: 900px) {
+          @media (width <= 900px) {
             font-size: 20px;
             font-weight: 400;
             line-height: 24px;
@@ -113,7 +114,7 @@ body {
             line-height: 120%; /* 27.6px */
           }
 
-          @media (max-width: 900px) {
+          @media (width <= 900px) {
             width: 90%;
           }
         }
@@ -134,7 +135,7 @@ body {
         height: max-content;
 
 
-        @media (max-width: 900px) {
+        @media (width <= 900px) {
           width: 100%;
           margin: 0;
         }
@@ -143,15 +144,15 @@ body {
           object-fit: contain;
           width: 600px;
 
-          @media (max-width: 1300px) {
+          @media (width <= 1300px) {
             width: 400px;
           }
 
           height: 100%;
-          border: 0px solid #000;
-          box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
+          border: 0 solid #000;
+          box-shadow: 5px 5px 15px 0 rgb(0 0 0 / 15%);
 
-          @media (max-width: 900px) {
+          @media (width <= 900px) {
             width: 100%;
             height: unset;
           }
@@ -165,7 +166,7 @@ body {
           height: 100%;
           border: 5px solid transparent;
 
-          @media (max-width: 900px) {
+          @media (width <= 900px) {
             top: 12px;
             left: 12px;
             width: 95%;

@@ -4,7 +4,8 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  @media (max-width: 900px) {
+
+  @media (width <= 900px) {
     overflow-x: hidden;
   }
 
@@ -26,7 +27,7 @@
       width: 33%;
       margin: 0;
 
-      @media (max-width: 900px) {
+      @media (width <= 900px) {
         width: 70%;
         font-size: 22px;
       }
@@ -49,7 +50,7 @@
       margin-bottom: 35px;
       transition: all 125ms ease-in-out;
 
-      @media (max-width: 900px) {
+      @media (width <= 900px) {
         font-size: 36px;
         animation-name: color-blink-black;
         animation-duration: 3s;

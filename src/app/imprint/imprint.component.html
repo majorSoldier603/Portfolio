@@ -1,1 +1,4 @@
-<p>imprint works!</p>
+<div>
+  <app-legalnotice *ngIf="isLegalNotice"></app-legalnotice>
+  <app-impressum *ngIf="!isLegalNotice"></app-impressum>
+</div>

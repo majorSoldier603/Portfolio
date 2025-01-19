@@ -1,4 +1,5 @@
-<section (mouseenter)="hoverin(projectId)" [class.left]="projectId % 2 !== 0" [class.right]="projectId % 2 === 0" [id]="projectId"
+<section (mouseenter)="hoverin(projectId)" [class.left]="projectId % 2 !== 0" [class.right]="projectId % 2 === 0"
+         [id]="projectId"
          class="">
   <main>
     <h2>{{ projectId }}/05</h2>
@@ -15,7 +16,7 @@
 			<span>
 				<h3>{{ project.title }}</h3>
 				<h4>{{ project.techstack }}</h4>
-				<p>{{ project.tldr }}</p>
+				<p>{{ project.tldr | translate }}</p>
 				<div type="button">
 					<a [href]="project.gitHubLink">{{ project.bntname }}</a>
 				</div>

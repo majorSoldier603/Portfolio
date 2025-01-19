@@ -1,0 +1,7 @@
+"stylelint": {
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "indentation": 2,
+    "block-no-empty": true
+  }
+}

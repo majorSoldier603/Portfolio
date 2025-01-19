@@ -1,7 +1,6 @@
 <main>
   <h1>References</h1>
-  <h2>I thrive both independently and as part of a team. Here’s what my colleagues have to say about working with
-    me.</h2>
+  <h2>{{ referenc.headtext | translate }}</h2>
   <section>
     <app-reference-box *ngFor="let Reference of References; index as i" [ReferenceId]="i + 1"
                        [Reference]="Reference"></app-reference-box>

@@ -1,41 +1,43 @@
 <main class="contact-main">
   <section>
     <h1 class="h1consec32">Say hi!</h1>
-    <h2>Want to discuss a new project?</h2>
-    <h3>Say hello! let's discuss your ideas and make it happen</h3>
+    <h2>{{ contactMeTr.headtext | translate }}</h2>
+    <h3>{{ contactMeTr.comment | translate }}</h3>
   </section>
   <section class="form-section d-flex justify-content">
     <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
       <div class="InputWraper">
-        <label for="name" style="width: fit-content;">Your name</label>
-        <input #name="ngModel" [(ngModel)]="contactData.name" class="Input" id="name" name="name" pattern="^[a-zA-Z ]+([a-zA-Z' ]*[a-zA-Z])?$"
+        <label for="name" style="width: fit-content;">{{ contactMeTr.name | translate }}</label>
+        <input #name="ngModel" [(ngModel)]="contactData.name" class="Input" id="name" name="name"
+               pattern="^[a-zA-Z ]+([a-zA-Z' ]*[a-zA-Z])?$"
                placeholder="Your name" required type="text">
         @if (name.pristine && name.invalid && name.touched) {
-          <h6 class="FalseInputError">Your name is required</h6>
+          <h6 class="FalseInputError">{{ contactMeTr.nameRequired | translate }}</h6>
         } @else {
-          <h6 class="FalseInputError">Your name is invalid</h6>
+          <h6 class="FalseInputError">{{ contactMeTr.nameInvalid | translate }}</h6>
         }
       </div>
 
       <div class="InputWraper">
-        <label for="email" style="width: fit-content">Your email</label>
-        <input #email="ngModel" [(ngModel)]="contactData.email" class="Input" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+        <label for="email" style="width: fit-content">{{ contactMeTr.email | translate }}</label>
+        <input #email="ngModel" [(ngModel)]="contactData.email" class="Input" id="email" name="email"
+               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
                placeholder="Your Email" required type="email">
         @if (email.pristine && email.invalid && email.touched) {
-          <h6 class="FalseInputError">Your email is required</h6>
+          <h6 class="FalseInputError">{{ contactMeTr.emailRequired | translate }}</h6>
         } @else {
-          <h6 class="FalseInputError">Your email is invalid</h6>
+          <h6 class="FalseInputError">{{ contactMeTr.emailInvalid | translate }}</h6>
         }
       </div>
 
       <div class="InputWraper">
-        <label for="message" style="width: fit-content;">Your message</label>
+        <label for="message" style="width: fit-content;">{{ contactMeTr.message | translate }}</label>
         <textarea #message="ngModel" [(ngModel)]="contactData.message" class="Input" id="message" minlength="4"
                   name="message" placeholder="Your message" required></textarea>
         @if (message.pristine && message.invalid && message.touched) {
-          <h6 class="FalseInputError">Your message is required</h6>
+          <h6 class="FalseInputError">{{ contactMeTr.messageRequired | translate }}</h6>
         } @else {
-          <h6 class="FalseInputError">Your message is invalid</h6>
+          <h6 class="FalseInputError">{{ contactMeTr.messageInvalid | translate }}</h6>
         }
       </div>
       <div class="checkboxWraper">
@@ -43,10 +45,10 @@
           <input #privacyPolicy="ngModel" [(ngModel)]="contactData.privacyPolicy" class="inputHoverInput"
                  id="privacyPolicy" name="privacyPolicy" required type="checkbox">
         </main>
-        <label class="privacyPolicy" for="privacyPolicy">I've read the and agree to the <span class="inputHoverSpan">privacy policy</span>
-          processing of my data as outlined.</label>
+        <label class="privacyPolicy" for="privacyPolicy">{{ contactMeTr.checkBoxTextPartOne | translate }} <span [routerLink]="['/legal']" routerLinkActive="router-link-active"  class="inputHoverSpan">{{ contactMeTr.checkBoxTextPartTow | translate }}</span>
+          {{ contactMeTr.checkBoxTextPartThree | translate }}</label>
         @if (privacyPolicy.invalid && privacyPolicy.touched && privacyPolicy.dirty) {
-          <br><h6 class="FalseInputError">Please accept the privacy policy.</h6>
+          <br><h6 class="FalseInputError">{{ contactMeTr.checkBoxRequired | translate }}</h6>
         }
       </div>
       <input [disabled]="contactForm.form.invalid" [value]="buttonText" class="inputsubmit" type="submit">
