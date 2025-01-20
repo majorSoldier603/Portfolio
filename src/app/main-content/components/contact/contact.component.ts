@@ -16,6 +16,9 @@ import { TranslateModule } from '@ngx-translate/core';
 export class ContactComponent {
   buttonText: string = 'Send message';
 
+  emialSendSuccessful: boolean = false
+  emialSendTrigger: boolean = false
+
   contactData = {
     name: '',
     email: '',
@@ -38,7 +41,9 @@ export class ContactComponent {
     checkBoxTextPartOne: "contactMe.checkBoxTextPartOne",
     checkBoxTextPartTow: "contactMe.checkBoxTextPartTow",
     checkBoxTextPartThree: "contactMe.checkBoxTextPartThree",
-    checkBoxRequired: "contactMe.checkBoxRequired"
+    checkBoxRequired: "contactMe.checkBoxRequired",
+    emialSendFaild: "contactMe.emialSendFaild",
+    emialSendSuccessful: "contactMe:emialSendSuccessful"
   }
 
   mailTest = false;
@@ -72,10 +77,13 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
+            this.emialSendSuccessful = true
+            this.emialSendTrigger = true
             ngForm.resetForm();
           },
           error: (error) => {
+            this.emialSendSuccessful = false 
+            this.emialSendTrigger = true
             console.error(error);
           },
           complete: () => console.info('send post complete'),

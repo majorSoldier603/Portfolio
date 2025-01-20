@@ -39,7 +39,9 @@
         "checkBoxTextPartOne": "Ich habe dies gelesen und stimme der.",
         "checkBoxTextPartTow": "Datenschutzrichtlinie",
         "checkBoxTextPartThree": "Verarbeitung meiner Daten wie beschrieben zu",
-        "checkBoxRequired": "Bitte akzeptieren Sie die Datenschutzrichtlinie"
+        "checkBoxRequired": "Bitte akzeptieren Sie die Datenschutzrichtlinie",
+        "emialSendFaild": "PHP und Angular haben es erfolgreich geschafft. Sie können mir die E-Mail direkt an me@maximilianstark.dev senden, indem Sie einen E-Mail-Anbieter verwenden oder Gmail, Outlook oder andere wählen.",
+        "emialSendSuccessful": "Die E-Mail wurde erfolgreich an meinen Posteingang gesendet. Bitte geben Sie mir Zeit zum Reagieren (1–2 Tage, keine Werktage)."
     }
   }
   

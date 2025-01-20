@@ -52,7 +52,11 @@
         }
       </div>
       <input [disabled]="contactForm.form.invalid" [value]="buttonText" class="inputsubmit" type="submit">
-
+      @if (this.emialSendSuccessful && this.emialSendTrigger) {
+        <span id="emialSendFeedback">{{ contactMeTr.emialSendSuccessful | translate }}</span>
+      } @else if(this.emialSendTrigger) {
+        <span id="emialSendFeedback">{{ contactMeTr.emialSendFaild | translate }}</span>      
+      }  
     </form>
     <app-contact-scroll-up></app-contact-scroll-up>
   </section>

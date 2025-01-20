@@ -39,7 +39,9 @@
         "checkBoxTextPartOne": "I've read the and agree to the",
         "checkBoxTextPartTow": "privacy policy",
         "checkBoxTextPartThree": "processing of my data as outlined.",
-        "checkBoxRequired": "Please accept the privacy policy"
+        "checkBoxRequired": "Please accept the privacy policy",
+        "emialSendFaild": "Php and angular have successfully shit the bed. May you send the email to me directly at me@maximilianstark.dev using a mail provider of or choosing gmail outlook or others.",
+        "emialSendSuccessful": "The email was sent successfully to my inbox please give me some to react (1-2 days not business days)."
     }
   }
   
