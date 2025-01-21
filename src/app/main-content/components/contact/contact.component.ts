@@ -42,8 +42,8 @@ export class ContactComponent {
     checkBoxTextPartTow: "contactMe.checkBoxTextPartTow",
     checkBoxTextPartThree: "contactMe.checkBoxTextPartThree",
     checkBoxRequired: "contactMe.checkBoxRequired",
-    emialSendFaild: "contactMe.emialSendFaild",
-    emialSendSuccessful: "contactMe:emialSendSuccessful"
+    emailSendFaild: "contactMe.emailSendFaild",
+    emailSendSuccessful: "contactMe.emailSendSuccessful"
   }
 
   mailTest = false;

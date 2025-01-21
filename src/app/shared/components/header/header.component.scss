@@ -46,6 +46,10 @@ header {
   position: relative;
   box-sizing: border-box;
 
+  @media (width <= 900px) {
+    padding: 16px 25px 16px 20px;
+}
+
   div {
     cursor: pointer;
     img {

@@ -9,6 +9,10 @@ app-my-skills {
   justify-content: center;
   width: calc(100% - 200px);
   margin: 0 100px;
+  @media (width <= 900px) {
+    margin: 0 25px;
+    width: calc(100% - 50px);
+}
 }
 
 app-on-scroll-arrow {
@@ -30,7 +34,7 @@ app-contact {
 
 app-references {
   display: flex;
-  height: 100%;
+  height: fit-content;
   margin-top: 120px;
 }
 

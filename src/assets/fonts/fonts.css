@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'Syne';
-  src: url('Syne.ttf');
+  src: url('../fonts/Syne.ttf');
 }
 
 @font-face {
   font-family: 'Overpass';
-  src: url('Overpass-VariableFont_wght.ttf');
+  src: url('../fonts/Overpass-Italic-VariableFont_wght.ttf');
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('Poppins.ttf');
+  src: url('../fonts/Poppins.ttf');
 }

@@ -77,6 +77,10 @@ body {
   height: 400px;
   min-width: 30px;
 
+  @media (width <= 900px) {
+    margin: 0 25px;
+  }
+
   a {
     color: var(--black, #000);
     font-family: Overpass;
