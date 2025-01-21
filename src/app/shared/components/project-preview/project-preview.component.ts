@@ -29,11 +29,18 @@ export class ProjectPreviewComponent implements OnInit {
   ngOnInit() {
   }
 
-  hoverin(elementID: number) {
+  hoverIn(elementID: number) {
     this.wichsideishoverd(elementID);
     let elementRef = document.getElementById(elementID.toString());
     if (elementRef) {
       elementRef.className = this.side + '-hover' + ' ' + this.side;
+    }
+  }
+  hoverOut(elementID: number) {
+    this.wichsideishoverd(elementID);
+    let elementRef = document.getElementById(elementID.toString());
+    if (elementRef && this.side) {
+      elementRef.className = this.side
     }
   }
 

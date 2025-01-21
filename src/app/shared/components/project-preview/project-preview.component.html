@@ -1,4 +1,4 @@
-<section (mouseenter)="hoverin(projectId)" [class.left]="projectId % 2 !== 0" [class.right]="projectId % 2 === 0"
+<section (mouseenter)="hoverIn(projectId)" (mouseleave)="hoverOut(projectId)" [class.left]="projectId % 2 !== 0" [class.right]="projectId % 2 === 0"
          [id]="projectId"
          class="">
   <main>
