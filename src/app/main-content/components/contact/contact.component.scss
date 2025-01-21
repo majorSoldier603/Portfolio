@@ -86,7 +86,7 @@
 
         &.ng-touched {
           &.ng-invalid {
-            background-image: url("../../../../assets/FalseInputError.svg");
+            background-image: url("../../../../assets/img/FalseInputError.svg");
             background-repeat: no-repeat;
             background-position: right 20px;
             background-position: 96% 50%;
@@ -100,7 +100,7 @@
 
         &.ng-touched {
           &.ng-valid {
-            background-image: url("../../../../assets/GoodInput.svg");
+            background-image: url("../../../../assets/img/GoodInput.svg");
             background-repeat: no-repeat;
             background-position: right 20px;
             background-position: 96% 50%;
@@ -182,7 +182,7 @@
       }
 
       textarea::-webkit-resizer {
-        background-image: url("../../../../assets/resize\ arrow.svg") !important;
+        background-image: url("../../../../assets/img/resize\ arrow.svg") !important;
         background: no-repeat;
       }
 
@@ -353,7 +353,7 @@
 }
 
 .inputHoverInput:checked {
-  background-image: url('./../../../../assets/check_box.svg');
+  background-image: url('./../../../../assets/img/check_box.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
