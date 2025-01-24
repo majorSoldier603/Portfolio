@@ -1,6 +1,10 @@
 app-header {
   display: block;
   height: 92px;
+  position: fixed;
+  width: 100%;
+  background: #FFFCF3;
+  z-index: 1000;
 }
 
 .footerImprint {

@@ -119,9 +119,9 @@ header {
   position: fixed;
   top: 100%;
   height: 100%;
-  left: 0;
   flex-direction: column;
   width: 100%;
+  transform: translate(-84px, 0px);
   max-width: 1920px;
   justify-content: center;
   align-items: center;
@@ -130,7 +130,6 @@ header {
 
 #menu-toggle ~ .menu {
   bottom: 92px;
-  display: none;
   transition: height 125ms cubic-bezier(0.23, 1, 0.32, 1);
   transition: top 125ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -140,6 +139,7 @@ header {
   width: 100%;
   z-index: 10;
   display: unset;
+  max-height: 1080px;
   top: 92px;
   transition: height 125ms cubic-bezier(0.23, 1, 0.32, 1);
   transition: top 125ms cubic-bezier(0.23, 1, 0.32, 1);
