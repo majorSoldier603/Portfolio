@@ -8,8 +8,8 @@
     <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
       <div class="InputWraper">
         <label for="name" style="width: fit-content;">{{ contactMeTr.name | translate }}</label>
-        <input #name="ngModel" [(ngModel)]="contactData.name" class="Input" id="name" name="name"
-               pattern="^[a-zA-Z ]+([a-zA-Z' ]*[a-zA-Z])?$"
+        <input autocomplete="off" #name="ngModel" [(ngModel)]="contactData.name" class="Input" id="name" name="name"
+                pattern="^[a-zA-Z ]+([a-zA-Z' ]*[a-zA-Z])?$"
                placeholder="Your name" required type="text">
         @if (name.pristine && name.invalid && name.touched) {
           <h6 class="FalseInputError">{{ contactMeTr.nameRequired | translate }}</h6>
@@ -20,7 +20,7 @@
 
       <div class="InputWraper">
         <label for="email" style="width: fit-content">{{ contactMeTr.email | translate }}</label>
-        <input #email="ngModel" [(ngModel)]="contactData.email" class="Input" id="email" name="email"
+        <input autocomplete="off" #email="ngModel" [(ngModel)]="contactData.email" class="Input" id="email" name="email"
                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
                placeholder="Your Email" required type="email">
         @if (email.pristine && email.invalid && email.touched) {
@@ -32,7 +32,7 @@
 
       <div class="InputWraper">
         <label for="message" style="width: fit-content;">{{ contactMeTr.message | translate }}</label>
-        <textarea #message="ngModel" [(ngModel)]="contactData.message" class="Input" id="message" minlength="4"
+        <textarea autocomplete="off" #message="ngModel" [(ngModel)]="contactData.message" class="Input" id="message" minlength="4"
                   name="message" placeholder="Your message" required></textarea>
         @if (message.pristine && message.invalid && message.touched) {
           <h6 class="FalseInputError">{{ contactMeTr.messageRequired | translate }}</h6>

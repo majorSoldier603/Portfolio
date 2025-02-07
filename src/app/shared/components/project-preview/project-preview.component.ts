@@ -1,6 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {AfterViewInit, Component, Input} from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-
+import { OnscrollService } from "../../services/onscrollService/onscroll.service";
 @Component({
   selector: 'app-project-preview',
   standalone: true,
@@ -8,7 +8,7 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './project-preview.component.html',
   styleUrls: ['./project-preview.component.scss']
 })
-export class ProjectPreviewComponent implements OnInit {
+export class ProjectPreviewComponent implements AfterViewInit {
   @Input() project: any = {
 
     title: '',
@@ -23,28 +23,22 @@ export class ProjectPreviewComponent implements OnInit {
   @Input() projectId = 0;
   side: string | undefined;
 
-  constructor() {
+  private lastClickTime = 0;
+  private clickThreshold = 500;
+
+  constructor(private onscrollService: OnscrollService) {}
+
+  ngAfterViewInit(): void {
+    this.onscrollService.initializeScrollEffect('.hover-effectLOL', 500);
   }
 
-  ngOnInit() {
-  }
+  openLink(url: string) {
+    const currentTime = new Date().getTime();
 
-  hoverIn(elementID: number) {
-    this.wichsideishoverd(elementID);
-    let elementRef = document.getElementById(elementID.toString());
-    if (elementRef) {
-      elementRef.className = this.side + '-hover' + ' ' + this.side;
+    if (currentTime - this.lastClickTime < this.clickThreshold) {
+      window.open(url, '_blank');
     }
-  }
-  hoverOut(elementID: number) {
-    this.wichsideishoverd(elementID);
-    let elementRef = document.getElementById(elementID.toString());
-    if (elementRef && this.side) {
-      elementRef.className = this.side
-    }
-  }
 
-  wichsideishoverd(elementID: number) {
-    this.side = elementID % 2 === 0 ? 'right' : 'left';
+    this.lastClickTime = currentTime;
   }
 }

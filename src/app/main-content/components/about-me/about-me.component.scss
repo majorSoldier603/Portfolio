@@ -37,6 +37,7 @@ body {
         animation-name: color-blink-black;
         animation-duration: 2s;
         animation-iteration-count: infinite;
+        margin: 0;
 
         @keyframes color-blink-black {
           0% {

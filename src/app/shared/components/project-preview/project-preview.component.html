@@ -1,9 +1,9 @@
-<section (mouseenter)="hoverIn(projectId)" (mouseleave)="hoverOut(projectId)" [class.left]="projectId % 2 !== 0" [class.right]="projectId % 2 === 0"
+<section [class.left]="projectId % 2 !== 0" [class.left-hover]="projectId % 2 !== 0" [class.right]="projectId % 2 === 0" [class.right-hover]="projectId % 2 === 0"
          [id]="projectId"
-         class="">
+         class="hover-effectLOL">
   <main>
     <h2>{{ projectId }}/05</h2>
-    <a [href]="project.Link" rel="noopener noreferrer" target="_blank">
+    <a rel="noopener noreferrer" target="_blank" (click)="openLink(project.Link)">
       <div>
         <img src="assets/project-list/{{ project.img }}">
         <div>

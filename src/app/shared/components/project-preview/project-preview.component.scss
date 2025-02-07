@@ -246,7 +246,7 @@
   }
 }
 
-.left-hover {
+.left-hover.active-hover {
   main {
     a {
       div {
@@ -262,6 +262,7 @@
 
           border: 5px solid black;
           transition: all 125ms ease-out;
+          cursor: pointer;
 
           img {
             transform: rotate(-0.375turn);
@@ -576,7 +577,7 @@
   }
 }
 
-.right-hover {
+.right-hover.active-hover {
   main {
     a {
       div {
@@ -592,6 +593,7 @@
 
           border: 5px solid black;
           transition: all 125ms ease-out;
+          cursor: pointer;
 
           img {
             transform: rotate(-0.375turn);

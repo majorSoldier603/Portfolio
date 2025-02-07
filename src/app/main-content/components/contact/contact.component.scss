@@ -7,7 +7,6 @@
 }
 
 .contact-main {
-  padding-bottom: 15%;
   clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
 
   @media (width <= 900px) {
@@ -58,6 +57,7 @@
 
 .form-section {
   width: 100%;
+  padding-bottom: 34px;
 
   form {
     display: flex;
@@ -377,10 +377,14 @@
 
 .inputHoverSpan {
   border: none;
+  color: #5988FF;
+  padding: 0 5px;
 }
 
 .inputHoverSpan:hover {
   color: #5988FF;
+  font-weight: 900;
+  padding: 0 2.5px;
   cursor: pointer;
 }
 
@@ -407,6 +411,7 @@
 
 #emialSendFeedback {
   color: #FFFCF3;
+  font-size: 30px;
   font-family: Overpass;
   margin-top: 34px;
 }

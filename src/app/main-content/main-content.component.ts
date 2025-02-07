@@ -1,4 +1,4 @@
-import {Component, ElementRef, HostListener, QueryList, ViewChildren} from '@angular/core';
+import {Component, ElementRef, HostBinding, HostListener, QueryList, ViewChildren} from '@angular/core';
 import {HeroComponent} from "../main-content/components/hero/hero.component";
 import {AboutMeComponent} from './components/about-me/about-me.component';
 import {OnScrollArrowComponent} from '../shared/components/on-scroll-arrow/on-scroll-arrow.component';
@@ -25,6 +25,7 @@ import {CommonModule} from '@angular/common';
   styleUrl: './main-content.component.scss'
 })
 export class MainContentComponent {
+  @HostBinding('id') id = 'app-main-content';
   title = 'Portfolio';
 
   buttonText: string = 'Send message';
@@ -52,4 +53,6 @@ export class MainContentComponent {
     this.buttonText = window.innerWidth < 900 ? 'Say hello ;)' : 'Send message';
     this.textemail = window.innerWidth < 900 ? 'me@maximilianstark.dev' : '© Maximilian Stark 2024';
   }
+
+  
 }
