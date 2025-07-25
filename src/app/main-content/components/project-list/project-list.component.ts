@@ -42,6 +42,14 @@ export class ProjectListComponent {
     gitHubLink: 'https://github.com/majorSoldier603/El-Pollo-Loco',
     tldr:  'portfolio.elpollotext',
     bntname: 'Github'
+  }, {
+    title: 'Da Bubble',
+    img: 'dabubble.png',
+    Link: 'https://maximilianstark.dev/da-bubble/index.html',
+    techstack: 'Angular | TypeScript | Firebase',
+    gitHubLink: 'https://github.com/majorSoldier603/da-bubble',
+    tldr:  'portfolio.elpollotext',
+    bntname: 'Github'
   }
   ]
 }
