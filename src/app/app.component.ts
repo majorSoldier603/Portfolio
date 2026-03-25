@@ -19,8 +19,8 @@ export class AppComponent {
 
   constructor(private router: Router,private translate: TranslateService) {
     translate.addLangs(['en', 'de']);
-    translate.setDefaultLang('en');  
-    translate.use('en');               
+    translate.setDefaultLang('de');
+    translate.use('de');
   }
 
   ngOnInit(): void {

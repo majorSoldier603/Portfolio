@@ -2,6 +2,11 @@
     "app": {
       "hello": "Hello, World!"
     },
+    "hero": {
+      "whatIDoHead": "Angular · TypeScript · Firebase",
+      "whatIDo": "Structured web applications with a focus on user interfaces and data integration",
+      "searchingFor": "I am currently looking for an apprenticeship as an IT specialist in application development."
+    },
     "aboutMe": {
       "text": "I am an aspiring frontend developer with a focus on Angular and modern web technologies. I am currently looking for an apprenticeship as a software developer to further develop my practical skills.",
       "secParagraph": "If you think I would be a good fit for your company, feel free to get in touch.",

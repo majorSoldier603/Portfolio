@@ -2,6 +2,11 @@
     "app": {
       "hello": "Hallo, Welt!"
     },
+    "hero": {
+      "whatIDoHead": "Angular · TypeScript · Firebase",
+      "whatIDo": "Strukturierte Webanwendungen mit Fokus auf Benutzeroberflächen und Datenanbindung",
+      "searchingFor": "Aktuell suche ich eine Ausbildung als Fachinformatiker für Anwendungsentwicklung."
+    },
     "aboutMe": {
       "text": "Ich bin angehender Frontend-Entwickler mit Fokus auf Angular und moderne Webtechnologien. Aktuell suche ich eine Ausbildung als Fachinformatiker für Anwendungsentwicklung, um meine praktischen Fähigkeiten weiter auszubauen.",
       "secParagraph": "Wenn Sie denken, dass ich gut zu Ihrem Unternehmen passe, freue ich mich über Ihre Kontaktaufnahme.",

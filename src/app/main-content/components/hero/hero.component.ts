@@ -1,11 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {ScrollService} from "../../../shared/services/ScrollService/scroll.service";
 import {FormsModule} from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, TranslateModule],
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.scss']
 })
