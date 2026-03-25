@@ -2,7 +2,7 @@
          [id]="projectId"
          class="hover-effectLOL">
   <main>
-    <h2>{{ projectId }}/05</h2>
+    <h2>{{ projectId }}/03</h2>
     <a rel="noopener noreferrer" target="_blank" (click)="openLink(project.Link)">
       <div>
         <img src="assets/project-list/{{ project.img }}">
@@ -18,10 +18,13 @@
 				<h4>{{ project.techstack }}</h4>
 				<p>{{ project.tldr | translate }}</p>
 				<div type="button">
-          <a target="_blank" rel="noopener noreferrer" [href]="project.gitHubLink">{{ project.bntname }}</a>
+          <a style="white-space: nowrap; margin-bottom: 10px; font-weight: 600;" target="_blank" rel="noopener noreferrer" [href]="project.Link">Live Demo</a>
+				</div>
+        <div type="button">
+          <a style="opacity: 0.85;" target="_blank" rel="noopener noreferrer" [href]="project.gitHubLink">{{ project.bntname }}</a>
 				</div>
 			</span>
-      <h1>{{ projectId }}/05</h1>
+      <h1>{{ projectId }}/03</h1>
     </div>
   </main>
 </section>

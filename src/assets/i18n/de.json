@@ -3,10 +3,10 @@
       "hello": "Hallo, Welt!"
     },
     "aboutMe": {
-        "text": "Ich bin ein Frontend-Entwickler mit Sitz in Nordrhein-Westfalen. Ich helfe Designern und Unternehmen gerne dabei, ihre Ideen in die Tat umzusetzen. Ich freue mich darauf, meine Entwickler-Karriere mit einem Job als Junior-Webentwickler fortzusetzen.",
-        "secParagraph": "Wenn Sie denken, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich!",
-        "location": "Sitz in Kreis Recklinghausen",
-        "remote": "Offen für Remote-Arbeit"
+      "text": "Ich bin angehender Frontend-Entwickler mit Fokus auf Angular und moderne Webtechnologien. Aktuell suche ich eine Ausbildung als Fachinformatiker für Anwendungsentwicklung, um meine praktischen Fähigkeiten weiter auszubauen.",
+      "secParagraph": "Wenn Sie denken, dass ich gut zu Ihrem Unternehmen passe, freue ich mich über Ihre Kontaktaufnahme.",
+      "location": "Sitz in Dortmund",
+      "remote": "Offen für Remote-Arbeit"
     },
     "mySkills": {
         "commentpart1": "Sie sehen die benötigte Fähigkeit nicht?",
@@ -14,9 +14,10 @@
         "commentpart3": "Ich bin immer lernbereit!"
     },
     "portfolio": {
-        "headtext": "Probieren Sie meine neuesten Entwicklungsprojekte aus und sehen Sie sich deren Code an.",
-        "jointext": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag & Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-        "elpollotext": "Ein einfaches Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf Sharkie, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen."
+      "headtext": "Ausgewählte Projekte aus der Webentwicklung mit Angular, TypeScript und Firebase.",
+      "jointext": "Webanwendung zur Verwaltung von Aufgaben im Kanban-Stil mit Drag-and-Drop-Funktionalität und Benutzerzuweisung. Umsetzung der Benutzeroberfläche und Interaktionslogik mit JavaScript, HTML und CSS.",
+      "elpollotext": "Browserbasiertes Jump-and-Run-Spiel mit objektorientierter Struktur und Zustandslogik. Umsetzung von Spiellogik, Kollisionserkennung und Interaktionen in JavaScript.",
+      "dabubble": "Echtzeit-Chat-Anwendung mit Angular und Firebase zur Kommunikation zwischen Nutzern. Umsetzung von Nachrichtenlogik, Authentifizierung und Datenanbindung."
     },
     "references": {
         "headtext": "I thrive both independently and as part of a team. Here’s what my colleagues have to say about working with me.",
@@ -25,8 +26,8 @@
         "refThree": "Es war eine große Freude mit Maximilian zu arbeiten. Er versteht es, Teammitglieder zu motivieren und zu ermutigen, die bestmögliche Arbeit abzuliefern und trägt immer etwas zum Brainstorming bei. Was das Wohl der Gruppenmitglieder angeht, war er immer da und bereit, anderen zuzuhören und zu helfen, und das mit einem großartigen Sinn für Humor."
     },
     "contactMe": {
-        "headtext": "Möchten Sie ein neues Projekt besprechen?",
-        "comment": "Sag Hallo! Lass uns deine Ideen besprechen und umsetzen",
+        "headtext": "Interesse an einer Zusammenarbeit?",
+        "comment": "Kontaktieren Sie mich gerne – ich freue mich über Ihre Nachricht.",
         "name": "Ihr Name",
         "nameRequired": "Ihr Name ist erforderlich",
         "nameInvalid": "Ihr Name ist ungültig",
@@ -40,8 +41,8 @@
         "checkBoxTextPartTow": "Datenschutzrichtlinie",
         "checkBoxTextPartThree": "Verarbeitung meiner Daten wie beschrieben zu",
         "checkBoxRequired": "Bitte akzeptieren Sie die Datenschutzrichtlinie",
-        "emailSendFaild": "PHP und Angular haben es erfolgreich geschafft Fehlzuschagen. Sie können mir die E-Mail direkt an me@maximilianstark.dev senden, indem Sie einen E-Mail-Anbieter verwenden oder Gmail, Outlook oder andere wählen.",
-        "emailSendSuccessful": "Die E-Mail wurde erfolgreich an meinen Posteingang gesendet. Bitte geben Sie mir Zeit zum Reagieren (1–2 Tage, keine Werktage)."
+        "emailSendFaild": "Beim Senden der E-Mail ist ein Fehler aufgetreten. Bitte kontaktieren Sie mich direkt unter me@maximilianstark.dev.",
+        "emailSendSuccessful": "Die Nachricht wurde erfolgreich gesendet. Ich melde mich in der Regel innerhalb von 1–2 Tagen."
     },
     "privacyPolicy": {
         "title": "Datenschutz­erklärung",
@@ -129,4 +130,3 @@
         "text2": "Quelle"
     }
   }
-  

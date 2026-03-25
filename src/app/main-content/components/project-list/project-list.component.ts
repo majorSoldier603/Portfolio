@@ -46,9 +46,9 @@ export class ProjectListComponent {
     title: 'Da Bubble',
     img: 'dabubble.png',
     Link: 'https://maximilianstark.dev/da-bubble/index.html',
-    techstack: 'Angular | TypeScript | Firebase',
+    techstack: 'Angular | Firebase',
     gitHubLink: 'https://github.com/majorSoldier603/da-bubble',
-    tldr:  'portfolio.elpollotext',
+    tldr:  'portfolio.dabubble',
     bntname: 'Github'
   }
   ]
